@@ -37,6 +37,7 @@
       </div>
     </nav>
     <section id="profile">
+      
       <div class="section__pic-container">
         <img src="Pics/CesarPic1.png" alt="CesarPic" />
       </div>
@@ -119,7 +120,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience", class="hidden">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -331,6 +332,41 @@
     <section id="contact">
       <p class="section__text__p1">Want to talk to me</p>
       <h1 class="title">Try to reach me on</h1>
+
+      <form class="row g-3" action = "https://formsubmit.co/ceaseadames1992@gmail.com" method="POST">
+
+        <input type="text" name="_honey" style="display: none;">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="https://cadam047.github.io/OfficialPortfolio/formsubmitdemo/Success.html">
+
+
+        <div class= "col-md-6">
+          <label for= "firstName" class="form-label"> First Name</label>
+          <input type ="text" class="form-control" name="firstname" id="firstName" required>
+          </div>
+          <div class="col-md-6">
+            <label for= "lastName" class="form-label"> Last Name</label>
+            <input type ="text" class="form-control" name="lastname" id="lastName" required>
+          </div>
+          <div class="col-md-8">
+            <label for= "emailInfo" class="form-label"> E-mail</label>
+            <input type ="email" class="form-control" name="email" id="emailInfo" required>
+          </div>
+          <div class="col-md-4">
+            <label for= "phoneNumber" class="form-label"> Phone Number</label>
+            <input type ="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (555) 555-5555">
+          </div>
+          <div class="col-md-12">
+            <label for= "comments" class="form-label"> Any comments?</label>
+            <textarea class ="form-control" id="comments" name="comments" rows="3" required></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -338,7 +374,8 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBptJRJsrmshppLBvHShlWBBccqQNZmpTDSQrkxFsqzDRjJNrNzPCzdFdVmtgvMdwJvxsNw">ceaseadames1992@gmail.com</a></p>
+          <p><a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBptJRJsrmshppLBvHShlWBBccqQNZmpTDSQrkxFsqzDRjJNrNzPCzdFdVmtgvMdwJvxsNw">ceaseadames1992@gmail.com
+          </a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -363,6 +400,6 @@
       </nav>
       <p>Copyright &#169; 2024 Cesar's Portfolio. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="Action.js"></script>
   </body>
 </html>

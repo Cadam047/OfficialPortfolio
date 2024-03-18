@@ -14,6 +14,8 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: rgb(41, 41, 42);
+  background-image: linear-gradient(rgba(0, 0, 0,0.75), rgba(0, 0, 0, 0.75)), url(Pics/Space.jpg);
+  
 }
 
 p {
@@ -27,6 +29,23 @@ a,
   transition: all 300ms ease;
 }
 
+/*Added this*/
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.blur-effect {
+  animation: blurIn 1.5s forwards;
+}
+/*Added this*/
+
 /* DESKTOP NAV */
 
 nav,
@@ -38,18 +57,22 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  transition-delay: 600ms;
+  
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  transition-delay: 600ms;
 }
 
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
+  transition-delay: 600ms;
 }
 
 a:hover {
@@ -101,7 +124,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -159,7 +182,57 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
   color: white;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100hv;
 }
+
+form {
+  background-color: #222; /* Slightly lighter shade for the form background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(27, 27, 27, 0.1);
+}
+
+.form-label {
+  color: #cecece; /* Light grey for labels */
+}
+
+.form-control {
+  background-color: #1d1d1d;
+  border: 1px solid #303030;
+  color: #ddd; /* Light grey for input text */
+}
+
+.form-control::placeholder {
+  color: #363636;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Consider changing this to fit the black aesthetic, e.g., #333 */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #380f72; /* Darker on hover */
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
 
 .section-container {
   display: flex;
