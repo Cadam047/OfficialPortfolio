@@ -7,6 +7,14 @@
   padding: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1370px; /* Adjust as needed for your preferred width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add padding for smaller screens */
+  
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -14,7 +22,7 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: rgb(41, 41, 42);
-  background-image: linear-gradient(rgba(0, 0, 0,0.75), rgba(0, 0, 0, 0.75)), url(Pics/Space.jpg);
+  background-image: linear-gradient(rgb(55, 0, 92), rgba(26, 0, 51, 0.75)), url(Pics/Space.jpg);
   
 }
 
@@ -26,7 +34,7 @@ p {
 
 a,
 .btn {
-  transition: all 300ms ease;
+  transition: background-color 300ms ease, opacity 300ms ease;
 }
 
 /*Added this*/
@@ -244,22 +252,362 @@ form {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
+  gap: 12rem;
   height: 80vh;
   color: white;
 }
 
-.section__pic-container {
+.section__content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Adjust space between text and image */
+}
+
+
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg); /* Start at original position */
+  }
+  20% {
+    transform: rotate(15deg); /* Move hand to the right */
+  }
+  40% {
+    transform: rotate(-10deg); /* Move hand to the left */
+  }
+  60% {
+    transform: rotate(15deg); /* Move hand to the right again */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to original position */
+  }
+}
+
+/*nod yes animation*/
+
+@keyframes nodHead {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+  }
+  50% {
+      transform: translateY(-0px) rotate(-2deg); /* Move up and rotate left */
+  }
+}
+
+/*Left Arm moving*/
+
+@keyframes LeftArmMovement {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+  }
+  50% {
+      transform: translateY(0px) rotate(-1deg); /* Move up and rotate left */
+  }
+}
+
+
+/*Left Hand moving*/
+
+@keyframes LeftHandMovement {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+  }
+  50% {
+      transform: translateY(-10px) rotate(7deg); /* Move up and rotate left */
+  }
+}
+
+/*Left Shoe moving*/
+
+@keyframes LeftShoeMovement {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+  }
+  65% {
+      transform: translateY(-10px) rotate(3deg); /* Move up and rotate left */
+  }
+}
+
+
+/*Right Hand moving*/
+
+@keyframes RightHandMovement {
+  0%, 100% {
+      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+  }
+  50% {
+      transform: translateY(1px) rotate(-2deg); /* Move up and rotate left */
+  }
+}
+
+/*Tail moving*/
+
+@keyframes tailWiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+  
+  /* Adding stops for quick movement and pause */
+  0%, 0% { transform: rotate(0deg); } /* pause */
+}
+
+.handcontainer {
+
+  position: absolute; 
+  top: 100px;
+  left: 275px;
+  width: 500px;  /* Adjust the width of the container */
+  height: 300px;
+
+  animation: waveHand 2s ease-in-out infinite; /* 2 seconds, smooth motion, infinite loop */
+  }
+
+  .handcontainer img {
+    width: 100%; /* Ensure the image scales down to fit within the container */
+    height: 100%; /* Keep the image’s aspect ratio */
+  }
+
+
+
+      /* This is the body part of the character*/
+
+      .sectionPicBody {
+
+        position: absolute; 
+        top: 350px;
+        left: 1000px;
+        height: auto; 
+        width: 10%;
+
+        
+        }
+        
+        .sectionPicBody img {
+          width: 400px; /* Ensure the image scales down to fit within the container */
+          height: 400px; /* Keep the image’s aspect ratio */
+        }
+
+
+
+
+
+/* This is the head part of the character*/
+
+  .sectionPicHead {
+
+    position: absolute; 
+    top: 107px;
+    left: 992px;
+    height: auto; 
+    width: 10%;
+    animation: nodHead 1s ease-in-out infinite; /* Animation attached here */
+
+    
+    }
+    
+    .sectionPicHead img {
+      width: 500px; /* Ensure the image scales down to fit within the container */
+      height: 320px; /* Keep the image’s aspect ratio */
+    }
+
+
+
+
+
+
+
+
+    /* This is the left arm part of the character*/
+
+    .sectionPicLeftArm {
+
+      position: absolute; 
+      top: 334px;
+      left: 880px;
+      height: auto; 
+      width: 10%;
+      /*animation: LeftArmMovement 1s ease-in-out infinite;  Animation attached here */
+      
+      }
+      
+      .sectionPicLeftArm img {
+        width: 255px; /* Ensure the image scales down to fit within the container */
+        height: 115px; /* Keep the image’s aspect ratio */
+      }
+
+
+
+
+
+
+
+    /* This is the left hand part of the character*/
+
+      .sectionPicLeftHand {
+
+        position: absolute; 
+        top: 275px;
+        left: 765px;
+        height: auto; 
+        width: 10%;
+        animation: LeftHandMovement 1s ease-in-out infinite; /* Animation attached here */
+        
+        }
+        
+        .sectionPicLeftHand img {
+          width: 200px; /* Ensure the image scales down to fit within the container */
+          height: 200px; /* Keep the image’s aspect ratio */
+        }
+
+
+
+
+
+
+        /* This is the left shoe part of the character*/
+
+
+        .sectionPicLeftShoe {
+
+          position: absolute; 
+          top: 600px;
+          left: 895px;
+          height: auto; 
+          width: 10%;
+          animation: LeftShoeMovement 1.5s ease-in-out infinite; /* Animation attached here */
+          
+          }
+          
+          .sectionPicLeftShoe img {
+            width: 300px; /* Ensure the image scales down to fit within the container */
+            height: 150px; /* Keep the image’s aspect ratio */
+          }
+
+
+
+
+
+
+
+        /* This is the right arm part of the character*/
+
+
+        .sectionPicRightArm {
+
+          position: absolute; 
+          top: 403px;
+          left: 1156px;
+          height: auto; 
+          width: 10%;
+          /*animation: LeftHandMovement 1s ease-in-out infinite;  Animation attached here */
+          
+          }
+          
+          .sectionPicRightArm img {
+            width: 200px; /* Ensure the image scales down to fit within the container */
+            height: 85px; /* Keep the image’s aspect ratio */
+          }
+
+
+
+
+
+
+        /* This is the right hand part of the character*/
+
+      .sectionPicRightHand {
+
+        position: absolute; 
+        top: 385px;
+        left: 1250px;
+        height: auto; 
+        width: 10%;
+        animation: RightHandMovement 1.5s ease-in-out infinite; /* Animation attached here */
+        }
+        
+        .sectionPicRightHand img {
+          width: 250px; /* Ensure the image scales down to fit within the container */
+          height: 150px; /* Keep the image’s aspect ratio */
+        }
+
+
+
+
+
+
+
+
+      /* This is the tail part of the character*/
+
+      .sectionPicTail {
+
+        position: absolute; 
+        top: 475px;
+        left: 1090px;
+        height: auto; 
+        width: 10%;
+        animation: tailWiggle 1s ease-in-out infinite; /* Animation attached here */
+        
+        }
+        
+        .sectionPicTail img {
+          width: 200px; /* Ensure the image scales down to fit within the container */
+          height: 100px; /* Keep the image’s aspect ratio */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+.section__pic-container {
+
+position: absolute; 
+top: 190px;
+left: 600px;
+height: auto; 
+width: 10%;
+
+}
+
+.section__pic-container img {
+  width: 900px; /* Ensure the image scales down to fit within the container */
+  height: 500px; /* Keep the image’s aspect ratio */
+}
+
+
+
+.section__pic-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
   height: 400px;
-  width: 400px;
-  margin: auto 0;
+  width: 200px;
+  margin: 100px 0 100px 200px;
   color: white;
 }
 
 .section__text {
-  align-self: center;
-  text-align: center;
+  flex: 0 1 100%; /* Allow the container to shrink to 50% of its parent */
+  max-width: 600px; /* Set a maximum width */
+  margin: 0 auto 0 -25%; /* Center the text horizontally */
+  text-align: left;
+  color: white;
+  
+}
+.section__text__p0 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
@@ -269,7 +617,7 @@ form {
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
@@ -281,13 +629,13 @@ form {
 
 .title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
 #socials-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -303,6 +651,7 @@ form {
 
 .btn-container {
   display: flex;
+  padding-top:55px;
   justify-content: center;
   gap: 1rem;
 }
@@ -369,6 +718,7 @@ form {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
 .about-details-container {
