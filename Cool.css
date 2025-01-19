@@ -22,8 +22,37 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: rgb(41, 41, 42);
-  background-image: linear-gradient(rgb(55, 0, 92), rgba(26, 0, 51, 0.75)), url(Pics/Space.jpg);
+  overflow-x: hidden;
   
+}
+
+#background-video {
+  position: fixed;
+  /* Ensures the video stays in place as you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Covers full width of the viewport */
+  height: 100%;
+  /* Covers full height of the viewport */
+  object-fit: cover;
+  /* Ensures the video fills the entire screen proportionally */
+  z-index: -2;
+  /* Push the video behind all other elements */
+}
+
+/* Dark Overlay */
+.video-overlay {
+  position: fixed;
+  /* Fixed position to overlay the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.993);
+  /* Semi-transparent black for darkening effect */
+  z-index: -1;
+  /* Places the overlay above the video but behind content */
 }
 
 p {
@@ -239,9 +268,6 @@ form {
   gap: 10px;
 }
 
-
-
-
 .section-container {
   display: flex;
   color: white;
@@ -261,7 +287,7 @@ form {
 .section__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem; /* Adjust space between text and image */
 }
 
@@ -357,18 +383,14 @@ form {
 
 .handcontainer {
 
-  position: absolute; 
-  top: 100px;
-  left: 275px;
-  width: 500px;  /* Adjust the width of the container */
-  height: 300px;
-
+  position: flex; 
+  width: 275px;  /* Adjust the width of the container */
   animation: waveHand 2s ease-in-out infinite; /* 2 seconds, smooth motion, infinite loop */
   }
 
   .handcontainer img {
-    width: 100%; /* Ensure the image scales down to fit within the container */
-    height: 100%; /* Keep the image’s aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
 
@@ -390,10 +412,6 @@ form {
           width: 400px; /* Ensure the image scales down to fit within the container */
           height: 400px; /* Keep the image’s aspect ratio */
         }
-
-
-
-
 
 /* This is the head part of the character*/
 
@@ -487,12 +505,6 @@ form {
             height: 150px; /* Keep the image’s aspect ratio */
           }
 
-
-
-
-
-
-
         /* This is the right arm part of the character*/
 
 
@@ -512,11 +524,6 @@ form {
             height: 85px; /* Keep the image’s aspect ratio */
           }
 
-
-
-
-
-
         /* This is the right hand part of the character*/
 
       .sectionPicRightHand {
@@ -533,13 +540,6 @@ form {
           width: 250px; /* Ensure the image scales down to fit within the container */
           height: 150px; /* Keep the image’s aspect ratio */
         }
-
-
-
-
-
-
-
 
       /* This is the tail part of the character*/
 
@@ -559,24 +559,13 @@ form {
           height: 100px; /* Keep the image’s aspect ratio */
         }
 
-
-
-
-
-
-
-
-
-
-
-
 .section__pic-container {
 
-position: absolute; 
-top: 190px;
-left: 600px;
-height: auto; 
-width: 10%;
+  position: absolute;
+  top: 190px;
+  left: 600px;
+  height: auto;
+  width: 10%;
 
 }
 
@@ -585,14 +574,12 @@ width: 10%;
   height: 500px; /* Keep the image’s aspect ratio */
 }
 
-
-
 .section__pic-container2 {
   display: flex;
   justify-content: center;
   align-items: left;
-  height: 400px;
-  width: 200px;
+  height: 450px;
+  width: 100px;
   margin: 100px 0 100px 200px;
   color: white;
 }
@@ -612,12 +599,12 @@ width: 10%;
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 600px;
   color: white;
 }
 
 .section__text__p1 {
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
@@ -635,7 +622,7 @@ width: 10%;
 
 #socials-container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -651,7 +638,7 @@ width: 10%;
 
 .btn-container {
   display: flex;
-  padding-top:55px;
+  padding-top:0px;
   justify-content: center;
   gap: 1rem;
 }
@@ -706,12 +693,15 @@ width: 10%;
 
 .btn-container {
   gap: 1rem;
+
 }
 
 /* ABOUT SECTION */
 
 #about {
   position: relative;
+  margin-top: 15rem;
+
 }
 
 .about-containers {
@@ -732,7 +722,15 @@ width: 10%;
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-pic:hover {
+  transform: scale(1.1);
+  /* Enlarges slightly on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .arrow {
@@ -746,33 +744,94 @@ width: 10%;
   flex: 1;
   background:  rgb(41, 41, 42);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
   text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-container:hover {
+  transform: scale(1.05);
+  /* Slightly enlarges on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
 .section-container {
   gap: 4rem;
   height: 80%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.DevotedSenior {
+  background: rgb(41, 41, 42);
+
+  /* Subtle gradient background */
+  padding: 2rem;
+  /* Add padding around the text */
+  border-radius: 1rem;
+  /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  color: #ecf0f1;
+  /* Light text color for contrast */
+  font-size: 1.1rem;
+  /* Slightly larger font for readability */
+  line-height: 1.8;
+  /* Increase line height for better spacing between lines */
+}
+
+.DevotedSenior:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Slightly lighter on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.DevotedSenior p {
+  margin-bottom: 1.5rem;
+  /* Add spacing between paragraphs */
+}
+
+.DevotedSenior strong {
+  color: #ffffff;
+
+  font-weight: bold;
+
+}
+
+.DevotedSenior em {
+  color: #008f4c;
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  margin-top: 10rem;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  /* Highlight color */
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .experience-sub-title {
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  /* Highlight color */
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .experience-details-container {
@@ -788,30 +847,48 @@ width: 10%;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 
-  background:  rgb(41, 41, 42);
+  background:  rgba(100, 100, 218, 0);
 }
 
 article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgb(41, 41, 42);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+article:hover {
+  transform: translateY(-10px);
+  /* Hover animation */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 article .icon {
-  cursor: default;
+  width: 150px;
+    height: 150px;
+    margin-bottom: 0.5rem;
 }
 
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+    margin-top: 10rem;
+      padding: 4rem 2rem;
+      border-radius: 2rem;
+      color: #ffffff;
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background:  rgb(41, 41, 42);
+  background:  rgba(83, 83, 148, 0);
 }
 
 .project-img {
@@ -826,9 +903,36 @@ article .icon {
 }
 
 .project-btn {
-  color: rgb(255, 255, 255);
-  border-color: rgb(163, 163, 163);
+  margin-top: 35px;
+  color: #ffffff;
+    background: #490077;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition:  0.3s ease, transform 0.3s ease;
 }
+
+.project-btn:hover {
+  background: #160029;
+  transform: scale(1.1);
+}
+
+.project-details {
+  text-align: left;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.project-details li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  position: relative;
+  padding-left: 1.5rem;
+
+}
+
 
 /* CONTACT */
 
@@ -837,6 +941,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 15rem;
 }
 
 .contact-info-upper-container {

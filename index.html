@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="Cool.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+      <source src="Pics/SPACESS.mp4" type="video/mp4" />
+    </video>
+    
+    <!-- Dark Overlay -->
+    <div class="video-overlay"></div>
+
+
   <div class="container">
   <body>
+    
     <nav id="desktop-nav">
       <div class="logo">Cesar Adames</div>
       <div>
@@ -39,13 +51,16 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="handcontainer"> <img src="Pics/waving hand.png" alt="handPic" /> </div>
+
+
       <div class="section__content">
       <div class="section__text">
         <div class="section__text">
+        <div class="handcontainer"> <img src="Pics/waving hand.png" alt="handPic" /> </div>
           <h1 class="section__text__p0">Hi all!</h1> 
         <h1 class="title">My name is Cesar Adames</h1>
         <p class="section__text__p2">An aspirant software developer discovering HTML, CSS, JavaScript, Python, Java, and C#</p>
+
 
         <div class="btn-container">
 			<button class="btn btn-color-2" onclick="location.href='./#contact'">Contact me </button>
@@ -56,6 +71,8 @@
           <img src="Pics/LinkedInIcon.webp" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/cesar-adames-15a417264/'"/>
           <img src="Pics/GithubIcon2.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Cadam047'"/>
         </div>
+
+
       </div>
                <!-- This is the left shoe -->
                <div class="sectionPicLeftShoe"> <img src="Pics/Character left shoe.png" alt="CharacterLeftShoePic" /> </div> 
@@ -86,19 +103,17 @@
            
       </div>
 
-
-
-
-
-
     </section>
+
+
+
     <section id="about">
       <p class="section__text__p1">A little more</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container2">
           <img
-            src="Pics/CesarPic2.png"
+            src="Pics/CesarNew.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -125,11 +140,24 @@
             </div>
 
           </div>
-          <div class="text-container">
+          <div class="DevotedSenior">
             <p>
-              As a devoted senior attending Florida International University, I am on the transition of obtaining my Bachelor's degree in Computer Science, a journey marked by the belief that hard works surpasses the talent. This joyful personality that I have, has allowed me to meet remarmakable people who have reinforced my understanding that offering help is not a duty but a privilege. My academic and personal progress have shaped my approach to problem-solving and fueled the passion that I have for technology and programming. With a solid foundation in languages such as Java, HTML, CSS, JavaScript, C, and C++, I have developed differetn skills which am planning to use to make meaningful contributions to the world around me. 
+              <strong>As a devoted senior</strong> attending Florida International University, I am on the transition of obtaining
+              my <strong>Bachelor's degree in Computer Science</strong>, a journey marked by the belief that <em>hard work
+                surpasses talent</em>.
+            </p>
+            <p>
+              This joyful personality has allowed me to meet remarkable people who have reinforced my understanding that offering
+              help is not a duty but a privilege. My academic and personal progress have shaped my approach to
+              <strong>problem-solving</strong> and fueled my passion for <strong>technology and programming</strong>.
+            </p>
+            <p>
+              With a solid foundation in languages such as <strong>Python, HTML, CSS, JavaScript, C#,</strong> and
+              <strong>Java</strong>, I have developed skills that I plan to use to make meaningful contributions to the world
+              around me.
             </p>
           </div>
+
         </div>
       </div>
       <img
@@ -146,223 +174,161 @@
 
     
 
-    <section id="experience", class="hidden">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+    <section id="experience">
+      <div class="section-header">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="experience-title">Experience</h1>
+      </div>
+    
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="Pics/HTML5_logo_and_wordmark.svg.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Pics/CSS3_logo.svg.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Pics/Javascript-shield.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Pics/JavaFX_Logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaFX</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-        
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                src="Pics/PythonLogo.png"
-                 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src="Pics/java-4-logo-png-transparent.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Pics/CSharp.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src = "Pics/695px-C_Programming_Language.svg.png"
-          
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+        <!-- Unified Details Container -->
+          <h2 class="experience-sub-title">Frontend & Backend Development</h2>
+          <div class="article-container">
+            <!-- Frontend Development -->
+            <article>
+              <img src="Pics/HTML5_logo_and_wordmark.svg.png" alt="HTML Icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="Pics/CSS3_logo.svg.png" alt="CSS Icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="Pics/Javascript-shield.png" alt="JavaScript Icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+    
+            <!-- Backend Development -->
+            <article>
+              <img src="Pics/PythonLogo.png" alt="Python Icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="Pics/CSharp.png" alt="C# Icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="Pics/java-4-logo-png-transparent.png" alt="Java Icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-      <img
-        src="Pics/arrowdown.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+    
+      <div class="arrow-container">
+        <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </div>
     </section>
+
+
+
+
+
     <section id="projects">
-      <p class="section__text__p1">Take a look at my</p>
-      <h1 class="title">Projects</h1>
+      <div class="section-header">
+        <p class="section__text__p1">Take a look at my</p>
+        <h1 class="title">Projects</h1>
+      </div>
       <div class="text-container">
-        <p>In my academic venture, I have had the privilege on bringing to life several projects. Among these, "Captain AI" an AI made with HTML, CSS, and JavaScript. Equally noteworthy "Task Organizer" an app that organizes your tasks made with Java. Lastly, "Benson Run!" a runner type of video game made with C# on Unity.</p>
+        <p>
+          In my academic venture, I have had the privilege of bringing to life several projects. These include:
+          <strong>"Captain AI"</strong>, an AI made with HTML, CSS, and JavaScript; <strong>"Invently"</strong>, an
+          inventory management system using Firebase; and <strong>"Run Benson Run"</strong>, a 2D runner video game
+          developed in Unity with C#.
+        </p>
       </div>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- Captain AI -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="Pics/captainaBACKGROUND.jpg"
-                alt="Captain AI"
-                class="project-img"
-              />
+              <img src="Pics/captainaBACKGROUND.jpg" alt="Captain AI" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Captain AI</h2>
-            <div class="text-container">
-              <p>Developed an AI that answers all the financial questions that you ask
-                presented in the format of a website. This AI was made utilizing HTML, CSS, and JavaScript where it
-                uses different if and try statements in the JavaScript section while in the CSS and HTML sections
-                utilizes more classes and sections.
-                </p>            </div>
+            <ul class="project-details">
+              <li>Developed an AI that answers financial questions.</li>
+              <li>Created using HTML, CSS, and JavaScript.</li>
+              <li>Learned API integration to connect frontend and backend.</li>
+            </ul>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Cadam047/CapitalOneP'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Cadam047/CapitalOneP'">
                 Github
               </button>
             </div>
           </div>
+    
+          <!-- Invently -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="Pics/TaskOrgImage.webp"
-                alt="TaskOrg"
-                class="project-img"
-              />
+              <img src="Pics/Invently.jpg" alt="Invently" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Task Organizer</h2>
-            <div class="text-container">
-              <p> Developed an app that organizes the tasks for the user if they are
-                trying to figure out what to do first. The user can input tasks into ‘Most important’, ‘Mid important’, and
-                ‘Least important’ by using simple GUI. This app was made utilizing Java for the tasks that the app will
-                be working on and JavaFX to give the user a friendly GUI.
-                </p>           </div>
+            <h2 class="experience-sub-title project-title">Invently</h2>
+            <ul class="project-details">
+              <li>Developed an inventory management system.</li>
+              <li>Utilized HTML, CSS, JavaScript, and Firebase.</li>
+              <li>Gained experience in Firebase backend integration.</li>
+            </ul>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dr-Tamames-FIU/cop-3530-project-project-8'"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/EmilySalgueiros/invently'">
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=cJN5hjjryl4'"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=qadCqnLM6gg'">
                 Video Demo
               </button>
             </div>
           </div>
+    
+          <!-- Run Benson Run -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="Pics/BensonRuntITLE SCREEN.jpg"
-                alt="RunBensonRun"
-                class="project-img"
-              />
+              <img src="Pics/BensonRuntITLE SCREEN.jpg" alt="Run Benson Run" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Run Benson Run</h2>
-            <div class="text-container">
-              <p>Still in development as I still update new features: Developed a runner
-                type game where the player avoids different obstacles and tries to achieve a highest score every time the
-                player tries to run. This game utilizes unity as the game engine and uses C# as the programming
-                language.
-                </p>           </div>
+            <ul class="project-details">
+              <li>Developed a runner-style 2D game.</li>
+              <li>Utilized Unity game engine and C# scripting.</li>
+              <li>Expanded knowledge in 2D game development, GUI styles, and textures.</li>
+            </ul>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Cadam047/BensonRep'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Cadam047/BensonRep'">
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://draftygames.itch.io/benson-run'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://draftygames.itch.io/benson-run'">
                 Play
               </button>
-
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="Pics/arrowdown.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <div class="arrow-container">
+        <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </div>
     </section>
+
+
+
+
+
     <section id="contact">
       <p class="section__text__p1">Want to talk to me</p>
       <h1 class="title">Try to reach me on</h1>
@@ -432,7 +398,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Cesar's Portfolio. All Rights Reserved.</p>
+      <p>Copyright &#169;2025 Cesar's Portfolio. All Rights Reserved.</p>
     </footer>
   </div>
     </body>
