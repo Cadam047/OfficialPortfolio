@@ -277,6 +277,7 @@ form {
 
 #profile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 12rem;
@@ -286,9 +287,21 @@ form {
 
 .section__content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem; /* Adjust space between text and image */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  height: 100vh;
+  max-width: 1920px;
+  text-align: center;
+
+}
+
+/* Center text container */
+.section__text {
+  max-width: 500px;
+  text-align: center;
+  flex: 1;
 }
 
 
@@ -558,6 +571,22 @@ form {
           width: 200px; /* Ensure the image scales down to fit within the container */
           height: 100px; /* Keep the image’s aspect ratio */
         }
+  
+  #CharacterContainer {
+    position: relative;
+    display: flex;
+    width: 0;
+    height: 0;
+    top: -525px;
+    left: -200px;
+    transform: scale(0.5) translateX(0) translateY(0);
+    transition: transform 0.3s ease;
+  }
+
+  #CharacterContainer div {
+    position: absolute;
+  }
+
 
 .section__pic-container {
 
