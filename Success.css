@@ -95,9 +95,45 @@ nav {
     padding: 20px;
 }
 
+/* Animated Arrow */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    /* Adjust image size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: arrowPulse 1.5s infinite alternate;
+}
+
+/* Arrow Hover Effect */
+.back-button:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+/* Pulse Animation */
+@keyframes arrowPulse {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
 /* Mobile Friendly Navigation */
 @media screen and (max-width: 768px) {
     .title {
         font-size: 2.5rem;
     }
+  .back-button {
+      width: 100px;
+      /* Reduce size on mobile */
+      top: 15px;
+      left: 15px;
+  }
 }
