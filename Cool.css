@@ -304,6 +304,44 @@ form {
   flex: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  #profile {
+    transform: scale(0.70);
+    /* Adjust zoom for mobile */
+    width: 5vw;
+    height: 100vw;
+    padding: 2rem;
+    overflow: visible;
+
+  }
+
+  .section__content {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  
+  }
+
+    /* Center text container */
+    .section__text {
+      max-width: 500px;
+      text-align: center;
+      flex: 1;
+    }
+
+  #CharacterContainer {
+    transform: scale(0.75);
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
+
+        #CharacterContainer div {
+          position: absolute;
+        }
+}
+
 
 
 @keyframes waveHand {
