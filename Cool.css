@@ -2,6 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,13 @@
 
 .container {
   width: 100%;
-  max-width: 1370px; /* Adjust as needed for your preferred width */
-  margin: 0 auto; /* Center the content */
-  padding: 0 20px; /* Add padding for smaller screens */
-  
+  max-width: 1370px;
+  /* Adjust as needed for your preferred width */
+  margin: 0 auto;
+  /* Center the content */
+  padding: 0 20px;
+  /* Add padding for smaller screens */
+
 }
 
 body {
@@ -23,7 +27,7 @@ html {
   scroll-behavior: smooth;
   background-color: rgb(41, 41, 42);
   overflow-x: hidden;
-  
+
 }
 
 #background-video {
@@ -72,6 +76,7 @@ a,
     opacity: 0;
     filter: blur(10px);
   }
+
   to {
     opacity: 1;
     filter: blur(0);
@@ -81,6 +86,7 @@ a,
 .blur-effect {
   animation: blurIn 1.5s forwards;
 }
+
 /*Added this*/
 
 /* DESKTOP NAV */
@@ -95,7 +101,7 @@ nav {
   align-items: center;
   height: 17vh;
   transition-delay: 600ms;
-  
+
 }
 
 .nav-links {
@@ -226,20 +232,23 @@ section {
 }
 
 form {
-  background-color: #222; /* Slightly lighter shade for the form background */
+  background-color: #222;
+  /* Slightly lighter shade for the form background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(27, 27, 27, 0.1);
 }
 
 .form-label {
-  color: #cecece; /* Light grey for labels */
+  color: #cecece;
+  /* Light grey for labels */
 }
 
 .form-control {
   background-color: #1d1d1d;
   border: 1px solid #303030;
-  color: #ddd; /* Light grey for input text */
+  color: #ddd;
+  /* Light grey for input text */
 }
 
 .form-control::placeholder {
@@ -247,12 +256,14 @@ form {
 }
 
 .btn-primary {
-  background-color: #007bff; /* Consider changing this to fit the black aesthetic, e.g., #333 */
+  background-color: #007bff;
+  /* Consider changing this to fit the black aesthetic, e.g., #333 */
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #380f72; /* Darker on hover */
+  background-color: #380f72;
+  /* Darker on hover */
 }
 
 .contact-info-upper-container {
@@ -308,41 +319,60 @@ form {
 
 @keyframes waveHand {
   0% {
-    transform: rotate(0deg); /* Start at original position */
+    transform: rotate(0deg);
+    /* Start at original position */
   }
+
   20% {
-    transform: rotate(15deg); /* Move hand to the right */
+    transform: rotate(15deg);
+    /* Move hand to the right */
   }
+
   40% {
-    transform: rotate(-10deg); /* Move hand to the left */
+    transform: rotate(-10deg);
+    /* Move hand to the left */
   }
+
   60% {
-    transform: rotate(15deg); /* Move hand to the right again */
+    transform: rotate(15deg);
+    /* Move hand to the right again */
   }
+
   100% {
-    transform: rotate(0deg); /* Return to original position */
+    transform: rotate(0deg);
+    /* Return to original position */
   }
 }
 
 /*nod yes animation*/
 
 @keyframes nodHead {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    /* Start and end in the original position */
   }
+
   50% {
-      transform: translateY(-0px) rotate(-2deg); /* Move up and rotate left */
+    transform: translateY(-0px) rotate(-2deg);
+    /* Move up and rotate left */
   }
 }
 
 /*Left Arm moving*/
 
 @keyframes LeftArmMovement {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    /* Start and end in the original position */
   }
+
   50% {
-      transform: translateY(0px) rotate(-1deg); /* Move up and rotate left */
+    transform: translateY(0px) rotate(-1deg);
+    /* Move up and rotate left */
   }
 }
 
@@ -350,22 +380,32 @@ form {
 /*Left Hand moving*/
 
 @keyframes LeftHandMovement {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    /* Start and end in the original position */
   }
+
   50% {
-      transform: translateY(-10px) rotate(7deg); /* Move up and rotate left */
+    transform: translateY(-10px) rotate(7deg);
+    /* Move up and rotate left */
   }
 }
 
 /*Left Shoe moving*/
 
 @keyframes LeftShoeMovement {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    /* Start and end in the original position */
   }
+
   65% {
-      transform: translateY(-10px) rotate(3deg); /* Move up and rotate left */
+    transform: translateY(-10px) rotate(3deg);
+    /* Move up and rotate left */
   }
 }
 
@@ -373,94 +413,108 @@ form {
 /*Right Hand moving*/
 
 @keyframes RightHandMovement {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg); /* Start and end in the original position */
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    /* Start and end in the original position */
   }
+
   50% {
-      transform: translateY(1px) rotate(-2deg); /* Move up and rotate left */
+    transform: translateY(1px) rotate(-2deg);
+    /* Move up and rotate left */
   }
 }
 
 /*Tail moving*/
 
 @keyframes tailWiggle {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  50% { transform: rotate(-10deg); }
-  75% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
-  
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
   /* Adding stops for quick movement and pause */
-  0%, 0% { transform: rotate(0deg); } /* pause */
+  0%,
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* pause */
 }
 
 .handcontainer {
 
-  position: flex; 
-  width: 275px;  /* Adjust the width of the container */
-  animation: waveHand 2s ease-in-out infinite; /* 2 seconds, smooth motion, infinite loop */
-  }
+  position: flex;
+  width: 275px;
+  /* Adjust the width of the container */
+  animation: waveHand 2s ease-in-out infinite;
+  /* 2 seconds, smooth motion, infinite loop */
+}
 
-  .handcontainer img {
-    width: 100%;
-    height: auto;
-  }
+.handcontainer img {
+  width: 100%;
+  height: auto;
+}
 
 
-      /* This is the body part of the character*/
 
-      .sectionPicBody {
+/* This is the body part of the character*/
 
-        position: absolute; 
-        top: 350px;
-        left: 1000px;
-        height: auto; 
-        width: 10%;
+.sectionPicBody {
 
-        
-        }
-        
-        .sectionPicBody img {
-          width: 400px; /* Ensure the image scales down to fit within the container */
-          height: 400px; /* Keep the image’s aspect ratio */
-        }
+  position: absolute;
+  top: 350px;
+  left: 1000px;
+  height: auto;
+  width: 10%;
+
+
+}
+
+.sectionPicBody img {
+  width: 400px;
+  /* Ensure the image scales down to fit within the container */
+  height: 400px;
+  /* Keep the image’s aspect ratio */
+}
 
 /* This is the head part of the character*/
 
-  .sectionPicHead {
+.sectionPicHead {
 
-    position: absolute; 
-    top: 107px;
-    left: 992px;
-    height: auto; 
-    width: 10%;
-    animation: nodHead 1s ease-in-out infinite; /* Animation attached here */
+  position: absolute;
+  top: 107px;
+  left: 992px;
+  height: auto;
+  width: 10%;
+  animation: nodHead 1s ease-in-out infinite;
+  /* Animation attached here */
 
-    
-    }
-    
-    .sectionPicHead img {
-      width: 500px; /* Ensure the image scales down to fit within the container */
-      height: 320px; /* Keep the image’s aspect ratio */
-    }
 
-    /* This is the left arm part of the character*/
+}
 
-    .sectionPicLeftArm {
-
-      position: absolute; 
-      top: 334px;
-      left: 880px;
-      height: auto; 
-      width: 10%;
-      /*animation: LeftArmMovement 1s ease-in-out infinite;  Animation attached here */
-      
-      }
-      
-      .sectionPicLeftArm img {
-        width: 255px; /* Ensure the image scales down to fit within the container */
-        height: 115px; /* Keep the image’s aspect ratio */
-      }
+.sectionPicHead img {
+  width: 500px;
+  /* Ensure the image scales down to fit within the container */
+  height: 320px;
+  /* Keep the image’s aspect ratio */
+}
 
 
 
@@ -468,116 +522,157 @@ form {
 
 
 
-    /* This is the left hand part of the character*/
 
-      .sectionPicLeftHand {
+/* This is the left arm part of the character*/
 
-        position: absolute; 
-        top: 275px;
-        left: 765px;
-        height: auto; 
-        width: 10%;
-        animation: LeftHandMovement 1s ease-in-out infinite; /* Animation attached here */
-        
-        }
-        
-        .sectionPicLeftHand img {
-          width: 200px; /* Ensure the image scales down to fit within the container */
-          height: 200px; /* Keep the image’s aspect ratio */
-        }
+.sectionPicLeftArm {
 
+  position: absolute;
+  top: 334px;
+  left: 880px;
+  height: auto;
+  width: 10%;
+  /*animation: LeftArmMovement 1s ease-in-out infinite;  Animation attached here */
 
+}
 
-
-
-
-        /* This is the left shoe part of the character*/
+.sectionPicLeftArm img {
+  width: 255px;
+  /* Ensure the image scales down to fit within the container */
+  height: 115px;
+  /* Keep the image’s aspect ratio */
+}
 
 
-        .sectionPicLeftShoe {
-
-          position: absolute; 
-          top: 600px;
-          left: 895px;
-          height: auto; 
-          width: 10%;
-          animation: LeftShoeMovement 1.5s ease-in-out infinite; /* Animation attached here */
-          
-          }
-          
-          .sectionPicLeftShoe img {
-            width: 300px; /* Ensure the image scales down to fit within the container */
-            height: 150px; /* Keep the image’s aspect ratio */
-          }
-
-        /* This is the right arm part of the character*/
 
 
-        .sectionPicRightArm {
 
-          position: absolute; 
-          top: 403px;
-          left: 1156px;
-          height: auto; 
-          width: 10%;
-          /*animation: LeftHandMovement 1s ease-in-out infinite;  Animation attached here */
-          
-          }
-          
-          .sectionPicRightArm img {
-            width: 200px; /* Ensure the image scales down to fit within the container */
-            height: 85px; /* Keep the image’s aspect ratio */
-          }
 
-        /* This is the right hand part of the character*/
 
-      .sectionPicRightHand {
+/* This is the left hand part of the character*/
 
-        position: absolute; 
-        top: 385px;
-        left: 1250px;
-        height: auto; 
-        width: 10%;
-        animation: RightHandMovement 1.5s ease-in-out infinite; /* Animation attached here */
-        }
-        
-        .sectionPicRightHand img {
-          width: 250px; /* Ensure the image scales down to fit within the container */
-          height: 150px; /* Keep the image’s aspect ratio */
-        }
+.sectionPicLeftHand {
 
-      /* This is the tail part of the character*/
+  position: absolute;
+  top: 275px;
+  left: 765px;
+  height: auto;
+  width: 10%;
+  animation: LeftHandMovement 1s ease-in-out infinite;
+  /* Animation attached here */
 
-      .sectionPicTail {
+}
 
-        position: absolute; 
-        top: 475px;
-        left: 1090px;
-        height: auto; 
-        width: 10%;
-        animation: tailWiggle 1s ease-in-out infinite; /* Animation attached here */
-        
-        }
-        
-        .sectionPicTail img {
-          width: 200px; /* Ensure the image scales down to fit within the container */
-          height: 100px; /* Keep the image’s aspect ratio */
-        }
-  
-  #CharacterContainer {
-    position: relative;
-    display: flex;
-    width: 0;
-    height: 0;
-    top: -525px;
-    left: -200px;
-    transform: scale(0.5) translateX(0) translateY(0);
-    transition: transform 0.3s ease;
-  }
+.sectionPicLeftHand img {
+  width: 200px;
+  /* Ensure the image scales down to fit within the container */
+  height: 200px;
+  /* Keep the image’s aspect ratio */
+}
 
-  #CharacterContainer div {
-    position: absolute;
-  }
+
+
+
+
+
+/* This is the left shoe part of the character*/
+
+
+.sectionPicLeftShoe {
+
+  position: absolute;
+  top: 600px;
+  left: 895px;
+  height: auto;
+  width: 10%;
+  animation: LeftShoeMovement 1.5s ease-in-out infinite;
+  /* Animation attached here */
+
+}
+
+.sectionPicLeftShoe img {
+  width: 300px;
+  /* Ensure the image scales down to fit within the container */
+  height: 150px;
+  /* Keep the image’s aspect ratio */
+}
+
+/* This is the right arm part of the character*/
+
+
+.sectionPicRightArm {
+
+  position: absolute;
+  top: 403px;
+  left: 1156px;
+  height: auto;
+  width: 10%;
+  /*animation: LeftHandMovement 1s ease-in-out infinite;  Animation attached here */
+
+}
+
+.sectionPicRightArm img {
+  width: 200px;
+  /* Ensure the image scales down to fit within the container */
+  height: 85px;
+  /* Keep the image’s aspect ratio */
+}
+
+/* This is the right hand part of the character*/
+
+.sectionPicRightHand {
+
+  position: absolute;
+  top: 385px;
+  left: 1250px;
+  height: auto;
+  width: 10%;
+  animation: RightHandMovement 1.5s ease-in-out infinite;
+  /* Animation attached here */
+}
+
+.sectionPicRightHand img {
+  width: 250px;
+  /* Ensure the image scales down to fit within the container */
+  height: 150px;
+  /* Keep the image’s aspect ratio */
+}
+
+/* This is the tail part of the character*/
+
+.sectionPicTail {
+
+  position: absolute;
+  top: 475px;
+  left: 1090px;
+  height: auto;
+  width: 10%;
+  animation: tailWiggle 1s ease-in-out infinite;
+  /* Animation attached here */
+
+}
+
+.sectionPicTail img {
+  width: 200px;
+  /* Ensure the image scales down to fit within the container */
+  height: 100px;
+  /* Keep the image’s aspect ratio */
+}
+
+#CharacterContainer {
+  position: relative;
+  display: flex;
+  width: 0;
+  height: 0;
+  top: -525px;
+  left: -200px;
+  transform: scale(0.5) translateX(0) translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#CharacterContainer div {
+  position: absolute;
+}
 
 
 .section__pic-container {
@@ -591,8 +686,10 @@ form {
 }
 
 .section__pic-container img {
-  width: 900px; /* Ensure the image scales down to fit within the container */
-  height: 500px; /* Keep the image’s aspect ratio */
+  width: 900px;
+  /* Ensure the image scales down to fit within the container */
+  height: 500px;
+  /* Keep the image’s aspect ratio */
 }
 
 .section__pic-container2 {
@@ -606,18 +703,21 @@ form {
 }
 
 .section__text {
-  flex: 0 1 100%; /* Allow the container to shrink to 50% of its parent */
-  max-width: 600px; /* Set a maximum width */
-  margin: 0 auto 0 -25%; /* Center the text horizontally */
+  flex: 0 1 100%;
+  /* Allow the container to shrink to 50% of its parent */
+  max-width: 600px;
+  /* Set a maximum width */
+  margin: 0 auto 0 -25%;
+  /* Center the text horizontally */
   text-align: left;
   color: white;
-  
+
 }
+
 .section__text__p0 {
   font-size: 5rem;
   margin-bottom: 1rem;
   color: white;
-  left: 0%;
 }
 
 .section__text p {
@@ -660,7 +760,7 @@ form {
 
 .btn-container {
   display: flex;
-  padding-top:0px;
+  padding-top: 0px;
   justify-content: center;
   gap: 1rem;
 }
@@ -672,7 +772,7 @@ form {
   width: 8rem;
   border-radius: 2rem;
   color: white;
-  background: rgb(50,50,50);
+  background: rgb(50, 50, 50);
 }
 
 .btn-color-1 {
@@ -695,6 +795,7 @@ form {
 
 
 }
+
 .btn-color-2:hover {
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -730,7 +831,7 @@ form {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  
+
 }
 
 .about-details-container {
@@ -745,14 +846,14 @@ form {
 
 .about-pic {
   border-radius: 5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .about-pic:hover {
   transform: scale(1.1);
   /* Enlarges slightly on hover */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .arrow {
@@ -764,10 +865,10 @@ form {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background:  rgb(41, 41, 42);
+  background: rgb(41, 41, 42);
   border-radius: 2rem;
   text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .details-container:hover {
@@ -779,7 +880,7 @@ form {
 .section-container {
   gap: 4rem;
   height: 80%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section__pic-container {
@@ -808,8 +909,9 @@ form {
 }
 
 .DevotedSenior:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Slightly lighter on hover */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Slightly lighter on hover */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -833,9 +935,9 @@ form {
 
 #experience {
   margin-top: 10rem;
-    padding: 4rem 2rem;
-    border-radius: 2rem;
-    color: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
 }
 
 .experience-title {
@@ -848,7 +950,7 @@ form {
 }
 
 .experience-sub-title {
-font-size: 2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
   /* Highlight color */
@@ -871,11 +973,11 @@ font-size: 2rem;
   gap: 2.5rem;
   justify-content: center;
 
-  background:  rgba(100, 100, 218, 0);
+  background: rgba(100, 100, 218, 0);
 }
 
 article {
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -895,22 +997,22 @@ article:hover {
 
 article .icon {
   width: 150px;
-    height: 150px;
-    margin-bottom: 0.5rem;
+  height: 150px;
+  margin-bottom: 0.5rem;
 }
 
 /* PROJECTS SECTION */
 
 #projects {
-    margin-top: 10rem;
-      padding: 4rem 2rem;
-      border-radius: 2rem;
-      color: #ffffff;
+  margin-top: 10rem;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background:  rgba(83, 83, 148, 0);
+  background: rgba(83, 83, 148, 0);
 }
 
 .project-img {
@@ -927,12 +1029,12 @@ article .icon {
 .project-btn {
   margin-top: 35px;
   color: #ffffff;
-    background: #490077;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1rem;
-    font-size: 1rem;
-    transition:  0.3s ease, transform 0.3s ease;
+  background: #490077;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: 0.3s ease, transform 0.3s ease;
 }
 
 .project-btn:hover {
@@ -970,7 +1072,7 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border:  rgb(41, 41, 42) 0.1rem solid;
+  border: rgb(41, 41, 42) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
@@ -1007,5 +1109,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-
