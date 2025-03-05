@@ -1,0 +1,68 @@
+def calculate_factorialH(n):
+    if n == 0:
+        return 1
+    else:
+        return n * calculate_factorialH(n - 1)
+
+def mainH():
+    num = int(input("Enter a non-negative integer: "))
+    if num < 0:
+        print("Factorial is not defined for negative numbers.")
+    else:
+        result  = calculate_factorialH(num)
+        print("The factorial of", num, "is", result)
+
+def calculate_factorialAI(n):
+    result = 1
+    for i in range(2, n + 1):  # Iterative approach avoids recursion issues
+        result *= i
+    return result
+
+def mainAI():
+    try:
+        num = int(input("Enter a non-negative integer: "))
+    except ValueError:
+        print("Invalid input! Please enter a non-negative integer.")
+        return
+    
+    if num < 0:
+        print("Factorial is not defined for negative numbers.")
+        return  # Prevents further execution
+    
+    result = calculate_factorialAI(num)
+    print(f"The factorial of {num} is {result}")
+
+import math
+
+def calculate_factorialAIH(n):
+    """Calculates factorial for integers and gamma function for decimals."""
+    if n == int(n):  # Integer case
+        result = 1
+        for i in range(2, int(n) + 1):
+            result *= i
+        return result
+    else:  # Decimal case: Uses Gamma function (Gamma(n+1) = n!)
+        return math.gamma(n + 1)
+
+def mainAIH():
+    user_input = input("Enter a non-negative number: ")
+
+    # Check if the input is a valid number (integer or float)
+    try:
+        num = float(user_input)
+    except ValueError:
+        print("That is not a number, please enter a valid input.")
+        return
+    
+    if num < 0:
+        print("Factorial is not defined for negative numbers.")
+        return  # Prevents further execution
+    
+    result = calculate_factorialAIH(num)
+    print(f"The factorial of {num} is {result}")
+
+mainAIH()
+
+
+
+

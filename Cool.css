@@ -407,7 +407,6 @@ form {
   }
 
 
-
       /* This is the body part of the character*/
 
       .sectionPicBody {
@@ -444,13 +443,6 @@ form {
       width: 500px; /* Ensure the image scales down to fit within the container */
       height: 320px; /* Keep the image’s aspect ratio */
     }
-
-
-
-
-
-
-
 
     /* This is the left arm part of the character*/
 
@@ -625,6 +617,7 @@ form {
   font-size: 5rem;
   margin-bottom: 1rem;
   color: white;
+  left: 0%;
 }
 
 .section__text p {
