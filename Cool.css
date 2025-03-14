@@ -87,6 +87,12 @@ p {
     transform-origin: top center;
   }
 }
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      .container {
+        transform: scale(0.6);
+        transform-origin: top center;
+      }
+}
 
 /* TRANSITION */
 
