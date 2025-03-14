@@ -63,6 +63,31 @@ p {
   color: rgb(220, 220, 220);
 }
 
+
+/*Screen Sizes*/
+
+/* RESPONSIVE DESIGN - SCALE CONTENT BASED ON SCREEN SIZE */
+@media screen and (max-width: 1200px) {
+  .container {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    transform: scale(0.7);
+    transform-origin: top center;
+  }
+}
+
 /* TRANSITION */
 
 a,
@@ -88,6 +113,7 @@ a,
 }
 
 /*Added this*/
+
 
 /* DESKTOP NAV */
 
@@ -135,6 +161,8 @@ a:hover {
   transition: all 300ms ease;
   color: rgb(107, 65, 143);
 }
+
+
 
 /* HAMBURGER MENU */
 
@@ -1109,3 +1137,4 @@ footer {
 footer p {
   text-align: center;
 }
+

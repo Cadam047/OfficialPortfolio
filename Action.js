@@ -5,3 +5,10 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
+
+  function openResume() {
+    let resumeWindow = window.open("Pics/SEOResume.pdf", "ResumeWindow", "width=800,height=600,scrollbars=yes,resizable=yes");
+  resumeWindow.focus();
+        }
+
+
