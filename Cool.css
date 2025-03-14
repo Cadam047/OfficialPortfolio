@@ -94,6 +94,13 @@ p {
       }
 }
 
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .container {
+    transform: scale(0.45);
+    transform-origin: top center;
+  }
+}
+
 /* TRANSITION */
 
 a,
