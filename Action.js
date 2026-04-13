@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
   function openResume() {
-    let resumeWindow = window.open("Pics/SEOResume.pdf", "ResumeWindow", "width=800,height=600,scrollbars=yes,resizable=yes");
+    let resumeWindow = window.open("Pics/Cesar_Adames_Resume.pdf", "ResumeWindow", "width=800,height=600,scrollbars=yes,resizable=yes");
   resumeWindow.focus();
         }
 
