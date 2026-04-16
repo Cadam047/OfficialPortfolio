@@ -297,6 +297,7 @@ form {
 }
 
 .btn-primary {
+  margin-top: 0.8rem ;
   background-color: #007bff;
   /* Consider changing this to fit the black aesthetic, e.g., #333 */
   border: none;
@@ -970,7 +971,7 @@ form {
 /* EXPERIENCE SECTION */
 
 #experience {
-  margin-top: 10rem;
+  margin-top: 30rem;
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -1037,10 +1038,140 @@ article .icon {
   margin-bottom: 0.5rem;
 }
 
+
+
+
+/* MOMENTS SECTION */
+
+
+#moments {
+  margin-top: 30rem;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
+}
+
+
+.moments-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  /* Highlight color */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.moments-sub-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  /* Highlight color */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.moments-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.image {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+    cursor: pointer;
+      transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.03);
+}
+
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10000;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+
+
+.EpicImage-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+
+EpicImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(41, 41, 42);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+EpicImage:hover {
+
+  transform: translateY(-10px);
+    /* Hover animation */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+
+
+
+
 /* PROJECTS SECTION */
 
 #projects {
-  margin-top: 10rem;
+  margin-top: 30rem;
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -1101,10 +1232,43 @@ article .icon {
 #contact {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  min-height: 100vh;
   height: 70vh;
   margin-top: 15rem;
+  padding: 2rem;
 }
+
+.contact-form {
+  width: 80%;
+  max-width: 700px;
+  background: rgb(41, 41, 42);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form .col-md-12:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form button {
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+  padding: 0.75rem;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+
 
 .contact-info-upper-container {
   display: flex;
@@ -1127,6 +1291,65 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+
+.form-group-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-label {
+  width: 130px;
+  min-width: 10px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+
+.form-group-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-group-horizontal .form-control {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea-group {
+  
+  align-items: flex-start;
+}
+
+.textarea-group textarea {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+.textarea-group .custom-label {
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .form-group-horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-label {
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+  }
 }
 
 .contact-icon {

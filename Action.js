@@ -12,3 +12,17 @@ function toggleMenu() {
         }
 
 
+function openImage(img) {
+  const modal = document.getElementById("imageModal");
+  const expandedImg = document.getElementById("expandedImg");
+
+  modal.style.display = "flex";
+  expandedImg.src = img.src;
+  expandedImg.alt = img.alt;
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+

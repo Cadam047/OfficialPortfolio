@@ -1,526 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cesar Adames | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="Pics/Websiteicon.ico">
-    <link rel="stylesheet" href="Cool.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cesar Adames | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="Pics/Oswald.ico">
+  <link rel="stylesheet" href="Cool.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
 
-    <!-- Video Background -->
-    <video autoplay muted loop id="background-video">
-      <source src="Pics/SPACESS.mp4" type="video/mp4" />
-    </video>
-    
-    <!-- Dark Overlay -->
-    <div class="video-overlay"></div>
+<!-- Video Background -->
+<video autoplay muted loop id="background-video">
+  <source src="Pics/SPACESS.mp4" type="video/mp4" />
+</video>
+
+<!-- Dark Overlay -->
+<div class="video-overlay"></div>
 
 
-  <div class="container">
-  
-    
-    <nav id="desktop-nav">
-      <div class="logo">Cesar Adames</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<div class="container">
+
+
+  <nav id="desktop-nav">
+    <div class="logo">Cesar Adames</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#moments">Moments</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Cesar Adames</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Cesar Adames</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#moments" onclick="toggleMenu()">Moments</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-    <section id="profile">
+    </div>
+  </nav>
+  <section id="profile">
 
 
-      <div class="section__content">
+    <div class="section__content">
       <div class="section__text">
         <div class="section__text">
-        <div class="handcontainer"> <img src="Pics/waving hand.png" alt="handPic" /> </div>
-          <h1 class="section__text__p0">Hi all!</h1> 
-        <h1 class="title">My name is Cesar Adames</h1>
-        <p class="section__text__p2">A Software Developer discovering Java, Python, C#, HTML, CSS, and JavaScript</p>
+          <div class="handcontainer"> <img src="Pics/waving hand.png" alt="handPic" /> </div>
+          <h1 class="section__text__p0">Hi all!</h1>
+          <h1 class="title">My name is Cesar Adames</h1>
+          <p class="section__text__p2">A Java Software Developer discovering C#, Python, HTML, CSS, and JavaScript</p>
 
 
-        <div class="btn-container">
-			<button class="btn btn-color-2" onclick="location.href='./#contact'">Contact me </button>
-      <button class="btn btn-color-1" onclick="openResume()">Resume</button>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact me </button>
+            <button class="btn btn-color-1" onclick="openResume()">Resume</button>
+          </div>
+
+          <div id="socials-container">
+            <img src="Pics/LinkedInIcon.webp" alt="My LinkedIn profile" class="icon"
+              onclick="location.href='https://www.linkedin.com/in/cesar-adames-15a417264/'" />
+            <img src="Pics/GithubIcon2.png" alt="My Github profile" class="icon"
+              onclick="location.href='https://github.com/Cadam047'" />
+          </div>
+
+
         </div>
 
-        <div id="socials-container">
-          <img src="Pics/LinkedInIcon.webp" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/cesar-adames-15a417264/'"/>
-          <img src="Pics/GithubIcon2.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Cadam047'"/>
+        <div id="CharacterContainer">
+          <!-- This is the left shoe -->
+
+          <div class="sectionPicLeftShoe"> <img src="Pics/Character left shoe.png" alt="CharacterLeftShoePic" /> </div>
+
+          <!-- This is the tail -->
+
+          <div class="sectionPicTail"> <img src="Pics/Character tail.png" alt="CharacterTailPic" /> </div>
+
+          <!-- This is the body -->
+
+          <div class="sectionPicBody"> <img src="Pics/CharacterBody.png" alt="CharacterBodyPic" /> </div>
+
+          <!-- This is the head -->
+
+          <div class="sectionPicHead"> <img src="Pics/Character head.png" alt="CharacterHeadPic" /> </div>
+
+          <!-- This is the left arm -->
+
+          <div class="sectionPicLeftArm"> <img src="Pics/Character left arm.png" alt="CharacterLeftArmPic" /> </div>
+
+          <!-- This is the left hand -->
+
+          <div class="sectionPicLeftHand"> <img src="Pics/Character left hand.png" alt="CharacterLeftHandPic" /> </div>
+
+          <!-- This is the right arm -->
+
+          <div class="sectionPicRightArm"> <img src="Pics/Character right arm.png" alt="CharacterRightArmPic" /> </div>
+
+          <!-- This is the right hand -->
+
+          <div class="sectionPicRightHand"> <img src="Pics/Character right hand.png" alt="CharacterRightHandPic" />
+          </div>
+
         </div>
 
+  </section>
 
+
+
+  <section id="about">
+    <p class="section__text__p1">A little more</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container2">
+        <img src="Pics/CesarNew.jpg" alt="Profile picture" class="about-pic" />
       </div>
-
-      <div id="CharacterContainer">
-      <!-- This is the left shoe -->
-       
-      <div class="sectionPicLeftShoe"> <img src="Pics/Character left shoe.png" alt="CharacterLeftShoePic" /> </div> 
-      
-      <!-- This is the tail -->
-
-      <div class="sectionPicTail"> <img src="Pics/Character tail.png" alt="CharacterTailPic" /> </div> 
-
-      <!-- This is the body -->
-
-      <div class="sectionPicBody"> <img src="Pics/CharacterBody.png" alt="CharacterBodyPic" /> </div>
-
-      <!-- This is the head -->
-
-       <div class="sectionPicHead"> <img src="Pics/Character head.png" alt="CharacterHeadPic" /> </div>  
-
-      <!-- This is the left arm -->
-         
-      <div class="sectionPicLeftArm"> <img src="Pics/Character left arm.png" alt="CharacterLeftArmPic" /> </div>  
-
-      <!-- This is the left hand -->
-
-      <div class="sectionPicLeftHand"> <img src="Pics/Character left hand.png" alt="CharacterLeftHandPic" /> </div>  
-        
-      <!-- This is the right arm -->
-
-      <div class="sectionPicRightArm"> <img src="Pics/Character right arm.png" alt="CharacterRightArmPic" /> </div>   
-         
-      <!-- This is the right hand -->
-
-      <div class="sectionPicRightHand"> <img src="Pics/Character right hand.png" alt="CharacterRightHandPic" /> </div>  
-           
-      </div>
-
-    </section>
-
-
-
-    <section id="about">
-      <p class="section__text__p1">A little more</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container2">
-          <img
-            src="Pics/CesarNew.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="Pics/EXPpic.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Florida International University Projects <br />Frontend Development<br /> Backend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="Pics/EDUpic.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Computer Science Bachelors Degree for 2025 at Florida International University </p>
-            </div>
-
-          </div>
-
-          
-      <div class="DevotedSenior">
-        <p>
-          <strong>As a recent graduate in Computer Science</strong> from Florida International University, I continue my
-          journey with the belief that <em>hard work surpasses talent</em>.
-        </p>
-        <p>
-          My joyful personality has allowed me to meet remarkable people who have reinforced my understanding that offering
-          help is not a duty but a privilege. My academic and personal growth have shaped my approach to
-          <strong>problem-solving</strong> and strengthened my passion for <strong>technology and programming</strong>.
-        </p>
-        <p>
-          With a solid foundation in languages such as <strong>Java, Python, C#, HTML, CSS, and JavaScript</strong>, I
-          continue developing my skills and applying them to make meaningful contributions to the world around me.
-        </p>
-      </div>
-
-        </div>
-      </div>
-      <img
-        src="Pics/arrowdown.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-
-
-
-
-
-    
-
-    <section id="experience">
-      <div class="section-header">
-        <p class="section__text__p1">Take a look at my</p>
-        <h1 class="experience-title">Programming Languages</h1>
-      </div>
-    
-      <div class="experience-details-container">
-        <!-- Unified Details Container -->
-          <h2 class="experience-sub-title">Frontend & Backend Development</h2>
-          <div class="article-container">
-            <!-- Frontend Development -->
-            <article>
-              <img src="Pics/HTML5_logo_and_wordmark.svg.png" alt="HTML Icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="Pics/CSS3_logo.svg.png" alt="CSS Icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="Pics/Javascript-shield.png" alt="JavaScript Icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-    
-            <!-- Backend Development -->
-            <article>
-              <img src="Pics/java-4-logo-png-transparent.png" alt="Java Icon" class="icon" />
-              <div>
-                <h3>Java</h3>
-                <p>Advance</p>
-              </div>
-            </article>
-            <article>
-              <img src="Pics/PythonLogo.png" alt="Python Icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="Pics/CSharp.png" alt="C# Icon" class="icon" />
-              <div>
-                <h3>C#</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    
-      <div class="arrow-container">
-        <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-      </div>
-    </section>
-
-
-        <section id="experience">
-          <div class="section-header">
-            <p class="section__text__p1">Take a look at my</p>
-            <h1 class="experience-title">Use of other technologies</h1>
-          </div>
-        
-          <div class="experience-details-container">
-            <!-- Unified Details Container -->
-
-            <div class="article-container">
-              <!-- Frontend Development -->
-
-              <article>
-                <img src="Pics/FigmaLogo.png" alt="Figma Icon" class="icon" />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="Pics/ExpoLogo.png" alt="Expo Icon" class="icon" />
-                <div>
-                  <h3>Expo</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="Pics/FirebaseLogo.png" alt="Firebase Icon" class="icon" />
-                <div>
-                  <h3>Firebase</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-
-              <article>
-                <img src="Pics/supabase.svg" alt="Supabase Icon" class="icon" />
-                <div>
-                  <h3>Supabase</h3>
-                  <p>Advance</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="Pics/React.png" alt="React Icon" class="icon" />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-              <article>
-              <img src="Pics/Streamlit.png" alt="Streamlit Icon" class="icon" />
-              <div>
-              <h3>Streamlit</h3>
-              <p>Beginner</p>
-              </div>
-              </article>
-
-                            
-
-
-                            <article>
-                              <img src="Pics/Postman.png" alt="Postman Icon" class="icon" />
-                              <div>
-                                <h3>Postman</h3>
-                                <p>Beginner</p>
-                              </div>
-                            </article>
-
-
-        
-              <!-- Backend Development -->
-              <article>
-                <img src="Pics/UnityLogo.png" alt="Unity Icon" class="icon" />
-                <div>
-                  <h3>Unity</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="Pics/GitHubLogo.png" alt="Github Icon" class="icon" />
-                <div>
-                  <h3>Github</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="Pics/MicrosoftOfficeLogo.png" alt="Microsoft Office Icon" class="icon" />
-                <div>
-                  <h3>Microsoft Office</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          </div>
-        
-          <div class="arrow-container">
-            <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-          </div>
-        </section>
-
-
-
-
-
-    <section id="projects">
-      <div class="section-header">
-        <p class="section__text__p1">Take a look at my</p>
-        <h1 class="title">Projects</h1>
-      </div>
-      <div class="text-container">
-        <p>
-          In my academic venture, I have had the privilege of bringing to life several projects. These include:
-          <strong>"Adoptly"</strong>, An application that decides for you build using Java; <strong>"Invently"</strong>, an
-          inventory management system using Firebase; and <strong>"Run Benson Run"</strong>, a 2D runner video game
-          developed in Unity with C#.
-        </p>
-      </div>
-      <div class="experience-details-container">
+      <div class="about-details-container">
         <div class="about-containers">
-          <!-- Adoptly -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="Pics/AdoptlyBackground.jpg" alt="Adoptly" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Adoptly</h2>
-            <ul class="project-details">
-              <li>Built an iOS app that lets users browse and search adoptable pets through a clean GUI interface.
-              </li>
-              <li>Developed a SwiftUI card and detail view experience to make pet discovery simple and engaging.</li>
-              <li>Integrated Supabase authentication and database tables to support user profiles and saved or favorited pets that you have included.
-              </li>
-            </ul>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/1cevM11f4vYRCQdgym5svygb0mJavYV5U/view'">
-                Demo
-              </button>
-            </div>
+          <div class="details-container">
+            <img src="Pics/EXPpic.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p> Florida International University Alumni <br /> Full Stack Development Projects <br /> Mobile Development Projects </p>
           </div>
-    
-          <!-- Invently -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="Pics/Invently.jpg" alt="Invently" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Invently</h2>
-            <ul class="project-details">
-            <li>Built a full-stack inventory management system to help organize and track items efficiently.</li>
-            <li>Used HTML, CSS, JavaScript, and Firebase to develop both the frontend and backend functionality.</li>
-            <li>Strengthened experience in database integration, real-time data handling, and backend development with Firebase.</li>
-            </ul>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/EmilySalgueiros/invently'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=qadCqnLM6gg'">
-                Demo
-              </button>
-            </div>
+          <div class="details-container">
+            <img src="Pics/EDUpic.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Computer Science Bachelors Degree on 2025 at Florida International University </p>
           </div>
-    
-          <!-- Run Benson Run -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="Pics/BensonRuntITLE SCREEN.jpg" alt="Run Benson Run" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Run Benson Run</h2>
-            <ul class="project-details">
-              <li>Developed a 2D runner-style game with engaging gameplay mechanics and interactive level design.</li>
-              <li>Built the project using the Unity game engine and C# scripting. Published it in itch.io to play it.</li>
-              <li>Expanded skills in 2D game development, user interface design, textures, and overall gameplay implementation.</li>
-            </ul>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/Cadam047/BensonRep'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://draftygames.itch.io/benson-run'">
-                Play
-              </button>
-            </div>
-          </div>
+
         </div>
+
+
+        <div class="DevotedSenior">
+          <p>
+            <strong>As a recent graduate in Computer Science</strong> from Florida International University, I continue
+            my
+            journey with the belief that <em>hard work surpasses talent</em>.
+          </p>
+          <p>
+            My joyful personality has allowed me to meet remarkable people who have reinforced my understanding that
+            offering
+            help is not a duty but a privilege. My academic and personal growth have shaped my approach to
+            <strong>problem-solving</strong> and strengthened my passion for <strong>technology and
+              programming</strong>.
+          </p>
+          <p>
+            With a solid foundation in languages such as <strong>Java, Python, C#, HTML, CSS, and JavaScript</strong>, I
+            continue developing my skills and applying them to make meaningful contributions to the world around me.
+          </p>
+        </div>
+
       </div>
-      <div class="arrow-container">
-        <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <section id="experience">
+    <div class="section-header">
+      <p class="section__text__p1">Take a look at my</p>
+      <h1 class="experience-title">Programming Languages</h1>
+    </div>
+
+    <div class="experience-details-container">
+      <!-- Unified Details Container -->
+      <div class="article-container">
+
+
+                <!-- Backend Development -->
+                <article>
+                  <img src="Pics/java-4-logo-png-transparent.png" alt="Java Icon" class="icon" />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Advance</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="Pics/PythonLogo.png" alt="Python Icon" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="Pics/CSharp.png" alt="C# Icon" class="icon" />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <!-- Frontend Development -->
+                <article>
+                  <img src="Pics/HTML5_logo_and_wordmark.svg.png" alt="HTML Icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="Pics/CSS3_logo.svg.png" alt="CSS Icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="Pics/Javascript-shield.png" alt="JavaScript Icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+
+
       </div>
-    </section>
+    </div>
+</div>
+
+
+</section>
 
 
 
 
 
-    <section id="contact">
-      <p class="section__text__p1">Want to talk to me</p>
-      <h1 class="title">Send me a message</h1>
 
-      <form method="POST" class="row g-3" action = "https://formsubmit.co/ceaseadames1992@gmail.com" >
+<!-- This is the experience of the frontend and backend technologies -->
 
-        <input type="text" name="_honey" style="display: none;">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="hidden" name="_next" value="https://cadam047.github.io/OfficialPortfolio/Success.html">
-
-
-        <div class= "col-md-6">
-          <label for= "firstName" class="form-label"> First Name</label>
-          <input type ="text" class="form-control" name="firstname" id="firstName" required>
-          </div>
-          <div class="col-md-6">
-            <label for= "lastName" class="form-label"> Last Name</label>
-            <input type ="text" class="form-control" name="lastname" id="lastName" required>
-          </div>
-          <div class="col-md-8">
-            <label for= "emailInfo" class="form-label"> E-mail</label>
-            <input type ="email" class="form-control" name="email" id="emailInfo" required>
-          </div>
-          <div class="col-md-4">
-            <label for= "phoneNumber" class="form-label"> Phone Number</label>
-            <input type ="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (555) 555-5555">
-          </div>
-          <div class="col-md-12">
-            <label for= "comments" class="form-label"> Any comments?</label>
-            <textarea class ="form-control" id="comments" name="comments" rows="3" required></textarea>
-          </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-            </form>
-
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="Pics/Gmail_icon_(2020).png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBptJRJsrmshppLBvHShlWBBccqQNZmpTDSQrkxFsqzDRjJNrNzPCzdFdVmtgvMdwJvxsNw">ceaseadames1992@gmail.com
-          </a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="Pics/NewlIBNKEDIN.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/cesar-adames-15a417264/">Cesar Adames</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169;2026 Cesar's Portfolio. All Rights Reserved.</p>
-    </footer>
+<section id="experience">
+  <div class="section-header">
+    <p class="section__text__p1">Take a look at my</p>
+    <h1 class="experience-title">Use of other technologies</h1>
   </div>
-    </body>
+
+  <div class="experience-details-container">
+    <!-- Unified Details Container -->
+
+    <div class="article-container">
+      <!-- Frontend Development -->
+
+      <article>
+        <img src="Pics/FigmaLogo.png" alt="Figma Icon" class="icon" />
+        <div>
+          <h3>Figma</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="Pics/ExpoLogo.png" alt="Expo Icon" class="icon" />
+        <div>
+          <h3>Expo</h3>
+          <p>Basic</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="Pics/FirebaseLogo.png" alt="Firebase Icon" class="icon" />
+        <div>
+          <h3>Firebase</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+
+
+      <article>
+        <img src="Pics/supabase.svg" alt="Supabase Icon" class="icon" />
+        <div>
+          <h3>Supabase</h3>
+          <p>Advance</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="Pics/React.png" alt="React Icon" class="icon" />
+        <div>
+          <h3>React</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="Pics/Streamlit.png" alt="Streamlit Icon" class="icon" />
+        <div>
+          <h3>Streamlit</h3>
+          <p>Beginner</p>
+        </div>
+      </article>
+
+
+
+
+      <article>
+        <img src="Pics/Postman.png" alt="Postman Icon" class="icon" />
+        <div>
+          <h3>Postman</h3>
+          <p>Beginner</p>
+        </div>
+      </article>
+
+
+
+      <!-- Backend Development -->
+      <article>
+        <img src="Pics/UnityLogo.png" alt="Unity Icon" class="icon" />
+        <div>
+          <h3>Unity</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img src="Pics/GitHubLogo.png" alt="Github Icon" class="icon" />
+        <div>
+          <h3>Github</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img src="Pics/MicrosoftOfficeLogo.png" alt="Microsoft Office Icon" class="icon" />
+        <div>
+          <h3>Microsoft Office</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section id="moments">
+
+  <div class="section-header">
+
+
+    <p class="section__text__p1">Take a look at my</p>
+    <h1 class="moments-title">Favorite moments</h1>
+
+
+  </div>
+
+  <div class="moments-details-container">
+    <!-- Unified Details Container -->
+
+    <div class="EpicImage-container">
+      <!-- Frontend Development -->
+
+<EpicImage>
+  <img src="Pics/EPICChallenge.jpg" 
+  alt="Universal Epic Universe" 
+  class="image"
+  onclick="openImage(this)"
+  />
+  <div>
+    <h3>Comcast Epic Challenge</h3>
+    <p>At Universal Epic Universe</p>
+  </div>
+</EpicImage>
+
+<!-- Image Modal -->
+ <div id="imageModal" 
+ class="image-modal"
+ onclick="closeImage()">
+<span class="close-btn">&times;</span>
+<img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+
+
+
+
+
+<EpicImage>
+  <img src="Pics/1stPlaceB.png" 
+  alt="1st Place Icon" 
+  class="image"
+    onclick="openImage(this)" />
+  <div>
+    <h3>Capstone Senior Project Showcase</h3>
+    <p>At Florida International University</p>
+  </div>
+</EpicImage>
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+
+
+
+
+<EpicImage>
+  <img src="Pics/AcademicTopB.png" 
+  alt="Academic Icon" 
+  class="image"
+  onclick="openImage(this)" 
+  />
+  <div>
+    <h3>Academic Achievement Award</h3>
+    <p>At Florida International University</p>
+  </div>
+</EpicImage>
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+
+<EpicImage>
+  <img src="Pics/CodepathE3Miami.jpg" 
+  alt="Codepath Icon" 
+  class="image"
+  onclick="openImage(this)"
+  />
+  <div>
+    <h3>Codepath E3 Program</h3>
+    <p>At Florida International University</p>
+  </div>
+</EpicImage>
+
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+
+
+<EpicImage>
+  <img src="Pics/OurPythonStudents.jpg" 
+  alt="Python Students Icon" 
+  class="image" 
+  onclick="openImage(this)"/>
+  <div>
+    <h3>Python Mentorship</h3>
+    <p>At Herbert A. Ammons Middle School</p>
+  </div>
+</EpicImage>
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+<EpicImage>
+  <img src="Pics/DreamInGreen.png" 
+  alt="DreaminGreen" 
+  class="image"
+  onclick="openImage(this)" />
+  <div>
+    <h3>Dream in Green Project Showcase</h3>
+    <p>At Florida International University</p>
+  </div>
+</EpicImage>
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="expandedImg" />
+</div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="arrow-container">
+    <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="projects">
+  <div class="section-header">
+    <p class="section__text__p1">Take a look at my</p>
+    <h1 class="title">Favorite projects</h1>
+  </div>
+  <div class="text-container">
+    <p>
+      In my academic venture, I have had the privilege of bringing to life several projects. These include:
+      <strong>Adoptly</strong>, a user-friendly pet adoption app that helps people browse, search, and find adoptable pets more easily build in swift; <strong>Invently</strong>, an
+      inventory management system using HTML, CSS, JavaScript and Firebase; and <strong>Run Benson Run</strong>, a 2D runner video game
+      developed in Unity with C#.
+    </p>
+  </div>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Adoptly -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="Pics/AdoptlyBackground.jpg" alt="Adoptly" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Adoptly</h2>
+        <ul class="project-details">
+          <li>Built an iOS app that lets users browse and search adoptable pets through a clean GUI interface.
+          </li>
+          <li>Developed a SwiftUI card and detail view experience to make pet discovery simple and engaging.</li>
+          <li>Integrated Supabase authentication and database tables to support user profiles and saved or favorited
+            pets that you have included.
+          </li>
+        </ul>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://drive.google.com/file/d/1cevM11f4vYRCQdgym5svygb0mJavYV5U/view'">
+            Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Invently -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="Pics/Invently.jpg" alt="Invently" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Invently</h2>
+        <ul class="project-details">
+          <li>Built a full-stack inventory management system to help organize and track items efficiently.</li>
+          <li>Used HTML, CSS, JavaScript, and Firebase to develop both the frontend and backend functionality.</li>
+          <li>Strengthened experience in database integration, real-time data handling, and backend development with
+            Firebase.</li>
+        </ul>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/EmilySalgueiros/invently'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://www.youtube.com/watch?v=qadCqnLM6gg'">
+            Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Run Benson Run -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="Pics/BensonRuntITLE SCREEN.jpg" alt="Run Benson Run" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Run Benson Run</h2>
+        <ul class="project-details">
+          <li>Developed a 2D runner-style game with engaging gameplay mechanics and interactive level design.</li>
+          <li>Built the project using the Unity game engine and C# scripting. Published it in itch.io to play it.</li>
+          <li>Expanded skills in 2D game development, user interface design, textures, and overall gameplay
+            implementation.</li>
+        </ul>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Cadam047/BensonRep'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://draftygames.itch.io/benson-run'">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arrow-container">
+    <img src="Pics/arrowdown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </div>
+</section>
+
+
+
+
+
+<section id="contact">
+  <p class="section__text__p1">Want to talk to me</p>
+  <h1 class="title">Send me a message</h1>
+
+  <form method="POST" class="row g-3 contact-form" action="https://formsubmit.co/ceaseadames1992@gmail.com">
+
+    <input type="text" name="_honey" style="display: none;">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="hidden" name="_next" value="https://cadam047.github.io/OfficialPortfolio/Success.html">
+
+
+    <div class="col-md-6">
+      <div class="form-group-horizontal">
+      <label for="firstName" class="form-label custom-label"> First Name</label>
+      <input type="text" class="form-control" name="firstname" id="firstName" required>
+    </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+      <div class="form-group-horizontal">
+      <label for="lastName" class="form-label custom-label"> Last Name</label>
+      <input type="text" class="form-control" name="lastname" id="lastName" required>
+    </div>
+    </div>
+
+
+    <div class="col-md-8">
+      <div class="form-group-horizontal">
+      <label for="emailInfo" class="form-label custom-label"> E-mail</label>
+      <input type="email" class="form-control" name="email" id="emailInfo" required>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group-horizontal">
+      <label for="phoneNumber" class="form-label custom-label"> Phone Number</label>
+      <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (555) 555-5555">
+    </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="form-group-horizontal textarea-group">
+      <label for="comments" class="form-label custom-label"> Any comments?</label>
+      <textarea class="form-control" id="comments" name="comments" rows="3" required></textarea>
+    </div>
+    </div>
+
+
+    <div class="col-md-12">
     
-    <script src="Action.js"></script>
-  </body>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    
+  </form>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="Pics/Gmail_icon_(2020).png" alt="Email icon" class="icon contact-icon email-icon" />
+      <p><a
+          href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBptJRJsrmshppLBvHShlWBBccqQNZmpTDSQrkxFsqzDRjJNrNzPCzdFdVmtgvMdwJvxsNw">ceaseadames1992@gmail.com
+        </a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="Pics/NewlIBNKEDIN.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/cesar-adames-15a417264/">Cesar Adames</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#moments">Moments</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169;2026 Cesar's Portfolio. All Rights Reserved.</p>
+</footer>
+</div>
+</body>
+
+<script src="Action.js"></script>
+</body>
+
 </html>
