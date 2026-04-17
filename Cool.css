@@ -355,6 +355,7 @@ form {
   max-width: 500px;
   text-align: center;
   flex: 1;
+
 }
 
 
@@ -754,6 +755,8 @@ form {
   text-align: left;
   color: white;
 
+
+
 }
 
 .section__text__p0 {
@@ -770,6 +773,7 @@ form {
 .section__text__p1 {
   text-align: center;
   color: white;
+
 }
 
 .section__text__p2 {
@@ -865,8 +869,9 @@ form {
 /* ABOUT SECTION */
 
 #about {
+  
   position: relative;
-  margin-top: 15rem;
+  margin-top: 30rem;
 
 }
 
@@ -921,6 +926,13 @@ form {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
+.section-header {
+
+  margin-top: 40rem;
+
+
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -971,7 +983,7 @@ form {
 /* EXPERIENCE SECTION */
 
 #experience {
-  margin-top: 30rem;
+  margin-top: 40rem;
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -986,6 +998,16 @@ form {
   text-align: center;
 }
 
+.experience-section {
+
+  padding: 2rem 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
+
+}
+
+
+
 .experience-sub-title {
   font-size: 2rem;
   font-weight: bold;
@@ -999,6 +1021,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 
 }
 
@@ -1020,10 +1043,14 @@ article {
   text-align: center;
   gap: 0.5rem;
   padding: 1rem;
+  width: 220px;
+  min-height: 260px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: rgb(41, 41, 42);
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 article:hover {
@@ -1032,12 +1059,20 @@ article:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
+
+
 article .icon {
   width: 150px;
   height: 150px;
-  margin-bottom: 0.5rem;
+  object-fit: contain;
+  display: block;
+  
 }
 
+article h3,
+article p {
+  margin: 0;
+}
 
 
 
@@ -1045,7 +1080,7 @@ article .icon {
 
 
 #moments {
-  margin-top: 30rem;
+  margin-top: 5rem;
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -1171,7 +1206,7 @@ EpicImage:hover {
 /* PROJECTS SECTION */
 
 #projects {
-  margin-top: 30rem;
+
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -1350,6 +1385,16 @@ EpicImage:hover {
     min-width: 100%;
     text-align: left;
   }
+
+        article {
+          width: 180px;
+          min-height: 230px;
+        }
+    
+        article .icon {
+          width: 120px;
+          height: 120px;
+        }
 }
 
 .contact-icon {
@@ -1363,6 +1408,7 @@ EpicImage:hover {
 /* FOOTER SECTION */
 
 footer {
+  margin-top: 10rem;
   height: 26vh;
   margin: 0 1rem;
 }
