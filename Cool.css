@@ -836,11 +836,8 @@ form {
 }
 
 .btn-color-1:hover {
-
   background: rgb(50, 50, 50);
   color: rgb(255, 255, 255);
-
-
 }
 
 .btn-color-2:hover {
@@ -927,10 +924,7 @@ form {
 }
 
 .section-header {
-
   margin-top: 40rem;
-
-
 }
 
 .section-container {
@@ -1006,8 +1000,6 @@ form {
 
 }
 
-
-
 .experience-sub-title {
   font-size: 2rem;
   font-weight: bold;
@@ -1058,8 +1050,6 @@ article:hover {
   /* Hover animation */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
-
 
 article .icon {
   width: 150px;
