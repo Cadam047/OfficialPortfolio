@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -14,9 +15,15 @@
   /* Adjust as needed for your preferred width */
   margin: 0 auto;
   /* Center the content */
-  padding: 0 20px;
+  padding: 0 2rem;
   /* Add padding for smaller screens */
+  box-sizing: border-box;
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -24,6 +31,8 @@ body {
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
   scroll-behavior: smooth;
   background-color: rgb(41, 41, 42);
   overflow-x: hidden;
@@ -64,42 +73,8 @@ p {
 }
 
 
-/*Screen Sizes*/
 
-/* RESPONSIVE DESIGN - SCALE CONTENT BASED ON SCREEN SIZE */
-@media screen and (max-width: 1200px) {
-  .container {
-    transform: scale(0.9);
-    transform-origin: top center;
-  }
-}
 
-@media screen and (max-width: 992px) {
-  .container {
-    transform: scale(0.8);
-    transform-origin: top center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    transform: scale(0.7);
-    transform-origin: top center;
-  }
-}
-    @media screen and (max-width: 480px) and (orientation: portrait) {
-      .container {
-        transform: scale(0.6);
-        transform-origin: top center;
-      }
-}
-
-@media screen and (max-width: 320px) and (orientation: portrait) {
-  .container {
-    transform: scale(0.45);
-    transform-origin: top center;
-  }
-}
 
 /* TRANSITION */
 
@@ -260,16 +235,13 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 5rem 0;
   box-sizing: border-box;
-  min-height: fit-content;
   color: white;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100hv;
 }
 
 form {
@@ -329,35 +301,40 @@ form {
 /* PROFILE SECTION */
 
 #profile {
+  width: 100%;
+  min-height: 80vh;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12rem;
-  height: 80vh;
+
+  padding: 4rem 0;
   color: white;
 }
 
 .section__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-  height: 100vh;
-  max-width: 1920px;
-  text-align: center;
+  width: 100%;
+  max-width: 1200px;
 
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr);
+
+  align-items: center;
+  gap: 4rem;
 }
 
 /* Center text container */
 .section__text {
-  max-width: 500px;
-  text-align: center;
-  flex: 1;
+  width: 100%;
+  max-width: 600px;
 
+  margin: 0;
+
+  text-align: left;
+  color: white;
 }
-
 
 
 @keyframes waveHand {
@@ -403,111 +380,19 @@ form {
   }
 }
 
-/*Left Arm moving*/
-
-@keyframes LeftArmMovement {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-    /* Start and end in the original position */
-  }
-
-  50% {
-    transform: translateY(0px) rotate(-1deg);
-    /* Move up and rotate left */
-  }
-}
 
 
-/*Left Hand moving*/
-
-@keyframes LeftHandMovement {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-    /* Start and end in the original position */
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(7deg);
-    /* Move up and rotate left */
-  }
-}
-
-/*Left Shoe moving*/
-
-@keyframes LeftShoeMovement {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-    /* Start and end in the original position */
-  }
-
-  65% {
-    transform: translateY(-10px) rotate(3deg);
-    /* Move up and rotate left */
-  }
-}
 
 
-/*Right Hand moving*/
 
-@keyframes RightHandMovement {
 
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-    /* Start and end in the original position */
-  }
 
-  50% {
-    transform: translateY(1px) rotate(-2deg);
-    /* Move up and rotate left */
-  }
-}
 
-/*Tail moving*/
 
-@keyframes tailWiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: rotate(-10deg);
-  }
-
-  75% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-
-  /* Adding stops for quick movement and pause */
-  0%,
-  0% {
-    transform: rotate(0deg);
-  }
-
-  /* pause */
-}
 
 .handcontainer {
-
-  position: flex;
-  width: 275px;
-  /* Adjust the width of the container */
+  width: 320px;
   animation: waveHand 2s ease-in-out infinite;
-  /* 2 seconds, smooth motion, infinite loop */
 }
 
 .handcontainer img {
@@ -517,200 +402,52 @@ form {
 
 
 
-/* This is the body part of the character*/
-
-.sectionPicBody {
-
-  position: absolute;
-  top: 350px;
-  left: 1000px;
-  height: auto;
-  width: 10%;
-
-
-}
-
-.sectionPicBody img {
-  width: 400px;
-  /* Ensure the image scales down to fit within the container */
-  height: 400px;
-  /* Keep the image’s aspect ratio */
-}
-
 /* This is the head part of the character*/
 
 .sectionPicHead {
+  width: 100%;
 
-  position: absolute;
-  top: 107px;
-  left: 992px;
-  height: auto;
-  width: 10%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1.5rem;
+
   animation: nodHead 1s ease-in-out infinite;
-  /* Animation attached here */
-
-
 }
 
 .sectionPicHead img {
   width: 500px;
-  /* Ensure the image scales down to fit within the container */
-  height: 320px;
-  /* Keep the image’s aspect ratio */
-}
-
-
-
-
-
-
-
-
-/* This is the left arm part of the character*/
-
-.sectionPicLeftArm {
-
-  position: absolute;
-  top: 334px;
-  left: 880px;
+  max-width: 100%;
   height: auto;
-  width: 10%;
-  /*animation: LeftArmMovement 1s ease-in-out infinite;  Animation attached here */
-
-}
-
-.sectionPicLeftArm img {
-  width: 255px;
-  /* Ensure the image scales down to fit within the container */
-  height: 115px;
-  /* Keep the image’s aspect ratio */
 }
 
 
 
 
 
+.character-wrapper {
+  width: 520px;
+  height: 455px;
 
+  position: relative;
 
-/* This is the left hand part of the character*/
-
-.sectionPicLeftHand {
-
-  position: absolute;
-  top: 275px;
-  left: 765px;
-  height: auto;
-  width: 10%;
-  animation: LeftHandMovement 1s ease-in-out infinite;
-  /* Animation attached here */
-
-}
-
-.sectionPicLeftHand img {
-  width: 200px;
-  /* Ensure the image scales down to fit within the container */
-  height: 200px;
-  /* Keep the image’s aspect ratio */
-}
-
-
-
-
-
-
-/* This is the left shoe part of the character*/
-
-
-.sectionPicLeftShoe {
-
-  position: absolute;
-  top: 600px;
-  left: 895px;
-  height: auto;
-  width: 10%;
-  animation: LeftShoeMovement 1.5s ease-in-out infinite;
-  /* Animation attached here */
-
-}
-
-.sectionPicLeftShoe img {
-  width: 300px;
-  /* Ensure the image scales down to fit within the container */
-  height: 150px;
-  /* Keep the image’s aspect ratio */
-}
-
-/* This is the right arm part of the character*/
-
-
-.sectionPicRightArm {
-
-  position: absolute;
-  top: 403px;
-  left: 1156px;
-  height: auto;
-  width: 10%;
-  /*animation: LeftHandMovement 1s ease-in-out infinite;  Animation attached here */
-
-}
-
-.sectionPicRightArm img {
-  width: 200px;
-  /* Ensure the image scales down to fit within the container */
-  height: 85px;
-  /* Keep the image’s aspect ratio */
-}
-
-/* This is the right hand part of the character*/
-
-.sectionPicRightHand {
-
-  position: absolute;
-  top: 385px;
-  left: 1250px;
-  height: auto;
-  width: 10%;
-  animation: RightHandMovement 1.5s ease-in-out infinite;
-  /* Animation attached here */
-}
-
-.sectionPicRightHand img {
-  width: 250px;
-  /* Ensure the image scales down to fit within the container */
-  height: 150px;
-  /* Keep the image’s aspect ratio */
-}
-
-/* This is the tail part of the character*/
-
-.sectionPicTail {
-
-  position: absolute;
-  top: 475px;
-  left: 1090px;
-  height: auto;
-  width: 10%;
-  animation: tailWiggle 1s ease-in-out infinite;
-  /* Animation attached here */
-
-}
-
-.sectionPicTail img {
-  width: 200px;
-  /* Ensure the image scales down to fit within the container */
-  height: 100px;
-  /* Keep the image’s aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #CharacterContainer {
   position: relative;
-  display: flex;
-  width: 0;
-  height: 0;
-  top: -525px;
-  left: -200px;
-  transform: scale(0.5) translateX(0) translateY(0);
+
+  width: 740px;
+  height: 650px;
+
+  transform: scale(0.7);
+  transform-origin: top center;
+
   transition: transform 0.3s ease;
+    transform: scale(0.7);
+
 }
 
 #CharacterContainer div {
@@ -736,27 +473,27 @@ form {
 }
 
 .section__pic-container2 {
+
+  width: 100%;
+  max-width: 320px;
+
+  height: auto;
+  margin: 0 auto;
+
   display: flex;
   justify-content: center;
-  align-items: left;
-  height: 450px;
-  width: 100px;
-  margin: 100px 0 100px 200px;
-  color: white;
+  align-items: center;
+
 }
 
 .section__text {
-  flex: 0 1 100%;
-  /* Allow the container to shrink to 50% of its parent */
+  width: 100%;
   max-width: 600px;
-  /* Set a maximum width */
-  margin: 0 auto 0 -25%;
-  /* Center the text horizontally */
+
+  margin: 0;
+
   text-align: left;
   color: white;
-
-
-
 }
 
 .section__text__p0 {
@@ -766,7 +503,7 @@ form {
 }
 
 .section__text p {
-  font-weight: 600px;
+  font-weight: 600;
   color: white;
 }
 
@@ -868,31 +605,56 @@ form {
 #about {
   
   position: relative;
-  margin-top: 30rem;
+  
 
 }
 
+
+#about .section-container {
+
+  display: grid;
+
+  grid-template-columns: minmax(250px, 320px) minmax(0, 1fr);
+
+  align-items: center;
+  gap: 4rem;
+
+  width: 100%;
+}
+
+#about .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
 .about-containers {
+  display: flex;
+  width: 100%;
+
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
 .about-details-container {
   display: flex;
- 
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
 }
 
+
+
 .about-pic {
+
+  display: block;
+  width: 100%;
+  height: auto;
+
   border-radius: 5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .about-pic:hover {
@@ -924,7 +686,8 @@ form {
 }
 
 .section-header {
-  margin-top: 40rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .section-container {
@@ -948,7 +711,9 @@ form {
   color: #ecf0f1;
   font-size: 1.1rem;
   line-height: 1.8;
-  width: 80%;
+
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .DevotedSenior:hover {
@@ -977,7 +742,6 @@ form {
 /* EXPERIENCE SECTION */
 
 #experience {
-  margin-top: 40rem;
   padding: 4rem 2rem;
   border-radius: 2rem;
   color: #ffffff;
@@ -992,13 +756,16 @@ form {
   text-align: center;
 }
 
-.experience-section {
+  .experience-section {
+    width: 100%;
+    padding: 0;
+  }
 
-  padding: 2rem 2rem;
-  border-radius: 2rem;
-  color: #ffffff;
+  .experience-section + experience-section {
 
-}
+    margin-top: 6rem;
+
+  }
 
 .experience-sub-title {
   font-size: 2rem;
@@ -1018,14 +785,14 @@ form {
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: center;
+  width: 100%;
 
-  background: rgba(100, 100, 218, 0);
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+
+  justify-content: center;
+  gap: 2rem;
 }
 
 article {
@@ -1202,6 +969,11 @@ EpicImage:hover {
   color: #ffffff;
 }
 
+#projects .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgba(83, 83, 148, 0);
@@ -1259,10 +1031,9 @@ EpicImage:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
-  height: 70vh;
-  margin-top: 15rem;
-  padding: 2rem;
+  min-height: auto;
+  height: auto;
+  padding: 5rem 0;
 }
 
 .contact-form {
@@ -1364,28 +1135,7 @@ EpicImage:hover {
   margin-top: 0.8rem;
 }
 
-@media (max-width: 768px) {
-  .form-group-horizontal {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
-  .custom-label {
-    width: 100%;
-    min-width: 100%;
-    text-align: left;
-  }
-
-        article {
-          width: 180px;
-          min-height: 230px;
-        }
-    
-        article .icon {
-          width: 120px;
-          height: 120px;
-        }
-}
 
 .contact-icon {
   cursor: default;
@@ -1405,5 +1155,478 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+/*Screen Sizes*/
+
+/* RESPONSIVE DESIGN - SCALE CONTENT BASED ON SCREEN SIZE */
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+
+  /* PROFILE */
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section__content {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .section__text {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .section__text__p0 {
+    font-size: 3rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+.character-wrapper {
+    width: 370px;
+    max-width: 100%;
+    height: 325px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #CharacterContainer {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  #CharacterContainer img {
+
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  /* ABOUT */
+
+#about {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 5rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* 1. ABOUT ME TITLE */
+
+  #about > .title {
+    order: 1;
+
+    width: 100%;
+    margin: 0 0 0.5rem;
+
+    text-align: center;
+  }
+
+
+  /* Optional "A little more" text */
+
+  #about > .section__text__p1 {
+    order: 2;
+
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+
+  /* Main content */
+
+  #about .section-container {
+    order: 3;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+
+    margin: 0;
+  }
+
+
+  /* 2. PICTURE */
+
+  .section__pic-container2 {
+    order: 1;
+
+    width: 100%;
+    max-width: 260px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-pic {
+    display: block;
+
+    width: 100%;
+    max-width: 260px;
+
+    height: auto;
+  }
+
+
+  /* Holds Experience, Education, DevotedSenior */
+
+  .about-details-container {
+    order: 2;
+
+    width: 100%;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+
+  /* Experience + Education wrapper */
+
+  .about-containers {
+    width: 100%;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+
+  /* 3 + 4. EXPERIENCE / EDUCATION */
+
+  .details-container {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+  }
+
+
+  /* 5. DEVOTED SENIOR */
+
+  .DevotedSenior {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 1.25rem;
+
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+
+  /* EXPERIENCE */
+
+  .experience-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .experience-section + .experience-section {
+    margin-top: 6rem;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .article-container {
+    gap: 1.5rem;
+  }
+
+  .experience-section article {
+    width: 100%;
+    min-height: 230px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+    padding: 1rem;
+
+    text-align: center;
+  }
+
+  .experience-section article .icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+
+
+  /* CONTACT */
+
+   #contact {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    /* Space above and below Contact */
+    padding: 30rem 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .form-group-horizontal {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-label {
+    width: 100%;
+    min-width: 0;
+
+    text-align: left;
+  }
+
+  .form-control,
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+}
+
+
+/* =========================
+   PHONE
+   ========================= */
+
+@media screen and (max-width: 480px) {
+
+  .container {
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+
+
+  /* PROFILE */
+
+  #profile {
+    padding: 3rem 1rem;
+  }
+
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section__content {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .section__text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section__text__p0 {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.character-wrapper {
+    width: 296px;
+    max-width: 100%;
+    height: 260px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #CharacterContainer {
+    transform: scale(0.3);
+    transform-origin: top center;
+  }
+
+  #CharacterContainer img {
+    display: block;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  /* ABOUT */
+
+  #about {
+    width: 100%;
+  }
+
+  #about .section-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .section__pic-container2 {
+    width: 100%;
+    max-width: 260px;
+
+    margin: 0 auto;
+  }
+
+  .about-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-details-container {
+    width: 100%;
+  }
+
+  .about-containers {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  .details-container {
+    width: 100%;
+  }
+
+  .DevotedSenior {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 1.25rem;
+
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+
+  /* EXPERIENCE */
+
+  .experience-title {
+    font-size: 1.6rem;
+  }
+
+  .experience-section + .experience-section {
+    margin-top: 4rem;
+  }
+
+  .article-container {
+    gap: 1rem;
+  }
+
+  .experience-section article {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+  }
+
+  .experience-section article .icon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .experience-section article h3 {
+    font-size: 1rem;
+  }
+
+  .experience-section article p {
+    font-size: 0.85rem;
+  }
 }
 
