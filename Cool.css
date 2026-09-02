@@ -508,8 +508,10 @@ form {
 }
 
 .section__text__p1 {
+  margin-top: 5rem;
   text-align: center;
   color: white;
+  
 
 }
 
@@ -605,7 +607,9 @@ form {
 #about {
   
   position: relative;
-  
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
 
 }
 
@@ -620,11 +624,11 @@ form {
   gap: 4rem;
 
   width: 100%;
+  margin-bottom: auto;
 }
 
 #about .title {
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 
@@ -1177,6 +1181,10 @@ footer p {
 
   /* PROFILE */
 
+    #profile {
+    padding: 3rem 1rem;
+  }
+
   section {
     width: 100%;
     max-width: 100%;
@@ -1203,16 +1211,21 @@ footer p {
     text-align: center;
   }
 
+    .section__text__p0 {
+    font-size: 3rem;
+  }
+
   .title {
     text-align: center;
   }
 
-  .section__text__p0 {
-    font-size: 3rem;
-  }
-
   .section__text__p2 {
     font-size: 1.25rem;
+  }
+
+    .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .character-wrapper {
@@ -1248,7 +1261,7 @@ footer p {
     height: auto;
 
     margin: 0;
-    padding: 5rem 1rem;
+    padding: 20rem 1rem;
 
     display: flex;
     flex-direction: column;
@@ -1256,26 +1269,6 @@ footer p {
   }
 
 
-  /* 1. ABOUT ME TITLE */
-
-  #about > .title {
-    order: 1;
-
-    width: 100%;
-    margin: 0 0 0.5rem;
-
-    text-align: center;
-  }
-
-
-  /* Optional "A little more" text */
-
-  #about > .section__text__p1 {
-    order: 2;
-
-    margin-bottom: 2rem;
-    text-align: center;
-  }
 
 
   /* Main content */
@@ -1289,9 +1282,9 @@ footer p {
     flex-direction: column;
     align-items: center;
 
-    gap: 2rem;
+    gap: 5rem;
 
-    margin: 0;
+    margin-bottom: 3rem;
   }
 
 
@@ -1487,13 +1480,19 @@ footer p {
     padding-right: 1rem;
   }
 
-  .section__content {
+   .section__content {
     width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: 1fr;
+
+    justify-items: center;
     gap: 2rem;
   }
 
   .section__text {
     width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
   }
@@ -1532,30 +1531,47 @@ footer p {
   #CharacterContainer {
     transform: scale(0.3);
     transform-origin: top center;
+    flex: auto;
   }
 
   #CharacterContainer img {
-    display: block;
+    display: block; 
     max-width: none;
     height: auto;
     object-fit: contain;
+    flex: auto;
   }
 
 
   /* ABOUT */
 
-  #about {
+#about {
     width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 20rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
 
   #about .section-container {
+    order: 3;
+
     width: 100%;
 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     gap: 2rem;
+
+    margin: 0;
   }
+
 
   .section__pic-container2 {
     width: 100%;
@@ -1598,6 +1614,18 @@ footer p {
 
   /* EXPERIENCE */
 
+  #experience {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 3rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .experience-title {
     font-size: 1.6rem;
   }
@@ -1629,4 +1657,3 @@ footer p {
     font-size: 0.85rem;
   }
 }
-
