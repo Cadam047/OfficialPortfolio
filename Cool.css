@@ -434,7 +434,7 @@ form {
 }
 
 .sectionPicHead img {
-  width: 500px;
+  width: 2000px;
   max-width: 100%;
   height: auto;
 }
@@ -807,6 +807,17 @@ form {
 }
 
 .article-container {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+
+  justify-content: center;
+  gap: 2rem;
+}
+
+.article-containerTwo {
   width: 100%;
 
   display: grid;
@@ -1278,7 +1289,7 @@ footer p {
   }
 
   #CharacterContainer {
-    transform: scale(0.5);
+    transform: scale(0.3);
     transform-origin: top center;
   }
 
