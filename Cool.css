@@ -156,11 +156,17 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+
+  gap: 1px;
+  flex-direction: column;
+  z-index: 1000;
+
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+
 }
 
 .hamburger-icon {
@@ -170,6 +176,7 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+
 }
 
 .hamburger-icon span {
@@ -177,6 +184,7 @@ a:hover {
   height: 2px;
   background-color: rgb(255, 255, 255);
   transition: all 0.3 ease-in-out;
+  
 }
 
 .menu-links {
@@ -188,6 +196,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+    
 }
 
 .menu-links a {
@@ -198,37 +207,46 @@ a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+   
 }
 
 .menu-links li {
   list-style: none;
+    
 }
 
 .menu-links.open {
   max-height: 300px;
+    
 }
 
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
+    
 }
 
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
+
 }
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+  
 }
 
 .hamburger-icon span:first-child {
   transform: none;
+    
 }
 
 .hamburger-icon span:first-child {
+   
   opacity: 1;
 }
 
 .hamburger-icon span:first-child {
+
   transform: none;
 }
 
@@ -1173,6 +1191,24 @@ footer p {
 
 @media screen and (max-width: 768px) {
 
+
+.handcontainer {
+  width: 320px;
+  animation: waveHand 2s ease-in-out infinite;
+  place-items: center;
+  align-items: center;     /* Centers vertically */
+
+}
+
+.handcontainer img {
+  width: 100%;
+  height: auto;
+  place-items: center;
+  align-items: center;     /* Centers vertically */
+
+}
+
+
   .container {
     width: 100%;
     padding: 0 1rem;
@@ -1457,6 +1493,8 @@ footer p {
    ========================= */
 
 @media screen and (max-width: 480px) {
+
+
 
   .container {
     width: 100%;
