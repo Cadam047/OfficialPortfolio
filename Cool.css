@@ -166,7 +166,7 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-
+  z-index: 1000;
 }
 
 .hamburger-icon {
@@ -1493,6 +1493,22 @@ footer p {
    ========================= */
 
 @media screen and (max-width: 480px) {
+
+  .handcontainer {
+  width: 320px;
+  animation: waveHand 2s ease-in-out infinite;
+  place-items: center;
+  align-items: center;     /* Centers vertically */
+
+}
+
+.handcontainer img {
+  width: 100%;
+  height: auto;
+  place-items: center;
+  align-items: center;     /* Centers vertically */
+
+}
 
 
 
