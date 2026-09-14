@@ -98,26 +98,44 @@
 
         <button
           class="btn btn-color-1"
-          onclick="openResume()">
+          onclick="openResume()"
+          data-analytics="resume"
+          >
+          
           Resume
         </button>
       </div>
 
       <div id="socials-container">
 
+        <a
+        href="https://www.linkedin.com/in/cesar-adames-15a417264/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-analytics="linkedin"
+        >
         <img
-          src="Pics/LinkedInIcon.webp"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/cesar-adames-15a417264/'"
+        src="Pics/LinkedInIcon.webp"
+        alt="My LinkedIn profile"
+        class="icon"
         />
+        </a>
 
+
+        <a
+        href="https://github.com/Cadam047"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-analytics="github"
+        >
         <img
-          src="Pics/GithubIcon2.png"
-          alt="My Github profile"
-          class="icon"
-          onclick="location.href='https://github.com/Cadam047'"
+        src="Pics/GithubIcon2.png"
+        alt="My Github profile"
+        class="icon"
         />
+        </a>
+
+
 
       </div>
 
@@ -607,11 +625,18 @@
           </li>
         </ul>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="location.href='https://drive.google.com/file/d/1cevM11f4vYRCQdgym5svygb0mJavYV5U/view'">
-            Demo
-          </button>
-        </div>
+  <a
+    href="https://drive.google.com/file/d/1cevM11f4vYRCQdgym5svygb0mJavYV5U/view"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-color-2 project-btn"
+    data-analytics="project"
+    data-project-name="Adoptly"
+    data-project-action="demo"
+  >
+    Demo
+  </a>
+</div>
       </div>
 
       <!-- Invently -->
@@ -626,16 +651,32 @@
           <li>Strengthened experience in database integration, real-time data handling, and backend development with
             Firebase.</li>
         </ul>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/EmilySalgueiros/invently'">
-            Github
-          </button>
-          <button class="btn btn-color-2 project-btn"
-            onclick="location.href='https://www.youtube.com/watch?v=qadCqnLM6gg'">
-            Demo
-          </button>
-        </div>
+        <!-- Invently -->
+<div class="btn-container">
+  <a
+    href="https://github.com/EmilySalgueiros/invently"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-color-2 project-btn"
+    data-analytics="project"
+    data-project-name="Invently"
+    data-project-action="github"
+  >
+    Github
+  </a>
+
+  <a
+    href="https://www.youtube.com/watch?v=qadCqnLM6gg"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-color-2 project-btn"
+    data-analytics="project"
+    data-project-name="Invently"
+    data-project-action="demo"
+  >
+    Demo
+  </a>
+</div>
       </div>
 
       <!-- Run Benson Run -->
@@ -650,14 +691,32 @@
           <li>Expanded skills in 2D game development, user interface design, textures, and overall gameplay
             implementation.</li>
         </ul>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Cadam047/BensonRep'">
-            Github
-          </button>
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://draftygames.itch.io/benson-run'">
-            Play
-          </button>
-        </div>
+        <!-- Run Benson Run -->
+<div class="btn-container">
+  <a
+    href="https://github.com/Cadam047/BensonRep"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-color-2 project-btn"
+    data-analytics="project"
+    data-project-name="Run Benson Run"
+    data-project-action="github"
+  >
+    Github
+  </a>
+
+  <a
+    href="https://draftygames.itch.io/benson-run"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-color-2 project-btn"
+    data-analytics="project"
+    data-project-name="Run Benson Run"
+    data-project-action="play"
+  >
+    Play
+  </a>
+</div>
       </div>
     </div>
   </div>
